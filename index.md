@@ -14,9 +14,9 @@ title: Rui Benfeitas
       <a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://img.icons8.com/windows/452/researchgate.png" width="20" height="20"></a><br>
       <p>My research focuses in employing systems biology, network analysis and machine learning techniques
 in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. My work focuses in cancer, metabolic and infectious diseases, in particular in transcriptomic, proteomic, metabolomic, and epigenomic data.</p>  
-		<p>[National Bioinformatics Infrastructure Sweden](https://www.nbis.se/about/staff/rui-benfeitas/)</p>  
-		<p>[Science for Life Laboratory](www.scilifelab.se)</p>  
-		<p>[Department of Biochemistry and Biophysics, Stockholm University](https://www.dbb.su.se/)</p>  
+		<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden]</a></p>  
+		<p><a href="www.scilifelab.se">Science for Life Laboratory</a></p>  
+		<p><a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University]</a></p>  
     </div>
     <div class="col s12">
     	<img style="float: right;" src="./includes/assets/img/photo.png" width="250px">
