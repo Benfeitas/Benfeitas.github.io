@@ -18,6 +18,6 @@ menu:
   - title: Home
     url:
   - title: Teaching
-    url: teaching
+    url: pages/teaching
   - title: Publications
-    url: publications
+    url: pages/publications
