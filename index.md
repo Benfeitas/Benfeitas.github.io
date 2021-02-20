@@ -12,7 +12,7 @@ title: Rui Benfeitas
 	<a href="linkedin.com/in/ruibenfeitas"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" width="20" height="20"></a>
 	<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://img.icons8.com/windows/452/researchgate.png" width="30" height="30"></a><br>
 </td>
-	<td style="width: 10%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" alt="" /></td>
+	<td style="width: 10%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="20%" alt="" /></td>
 
 </tr>
 </tbody>
