@@ -2,7 +2,7 @@
 layout: default
 title: Rui Benfeitas
 ---
-<table style="width: 70%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
+<table class="center" style="width: 70%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
 <tbody>
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
