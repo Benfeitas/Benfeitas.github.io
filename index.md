@@ -3,7 +3,7 @@ layout: default
 title: Rui Benfeitas
 ---
 
-<table class="center" style="width: 70%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
+<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
 <tbody>
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
@@ -14,7 +14,6 @@ title: Rui Benfeitas
 	<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="25"></a><br>
 </td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
-
 </tr>
 </tbody>
 </table>
@@ -24,7 +23,7 @@ title: Rui Benfeitas
       
       <p>My research focuses in employing systems biology, network analysis and machine learning techniques
 in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. My work focuses in cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data.</p>  
-		<p>I work and teach at the <a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a>, in <a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a>, and the <a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University.</a></p>  
+	<p>I work and teach at the <a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a>, in <a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a>, and the <a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University.</a></p>  
     </div>
     
   </div>

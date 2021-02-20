@@ -76,6 +76,7 @@ nav {
     }
 }
 
+
 .content {
     background-color: dark;
     padding-bottom: 64px;
@@ -203,6 +204,15 @@ pre {
 
 table {
     line-height: 1.0rem;
+    ul {
+        margin-left: 1.2rem;
+        li {
+            list-style-type: disc;
+        }
+    }
+    dl {
+        margin-left:10px;
+    }
 }
 
 table.border {
