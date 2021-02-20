@@ -3,12 +3,9 @@ layout: page
 title: "publications"
 ---
 
-
 ### Pre-prints
-C. Zhang, S. Lee, G. Bidkhori, **R. Benfeitas**, A. Lovric, S. Chen, M. Uhlen, J. Nielsen, A. Mardinoglu. 2019. “RMetD2: A Tool for Integration of Relative Transcriptomics Data into Genome-Scale Metabolic Models.” BioRxiv 663096.
-M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Clausen, J. Wikström, D. Etal, C. Zhang, M. Levin, A. Mardinoglu, J. Boren. 2020. “Revealing Tissue-Specific Metabolic Crosstalk after a Myocardial Infarction.” BioRxiv 2020.10.28.358556.
-
-
+18. C. Zhang, S. Lee, G. Bidkhori, **R. Benfeitas**, A. Lovric, S. Chen, M. Uhlen, J. Nielsen, A. Mardinoglu. 2019. “RMetD2: A Tool for Integration of Relative Transcriptomics Data into Genome-Scale Metabolic Models.” BioRxiv 663096.
+17. M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Clausen, J. Wikström, D. Etal, C. Zhang, M. Levin, A. Mardinoglu, J. Boren. 2020. “Revealing Tissue-Specific Metabolic Crosstalk after a Myocardial Infarction.” BioRxiv 2020.10.28.358556.
 
 ### Publications
 16. N. Acevedo, **R. Benfeitas**, S. Katayama, S. Bruhn, A. Andersson, G. Wikberg, L. Lundeberg, J. M. Lindvall, D. Greco, J. Kere, C. Söderhäll, A. Scheynius. 2020. “Epigenetic Alterations in Skin Homing CD4+CLA+ T Cells of Atopic Dermatitis Patients.” Scientific Reports 10(1):18020. [doi: 10.1038/s41598-020-74798-z](https://doi.org/10.1038/s41598-020-74798-z)
@@ -27,4 +24,4 @@ M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Claus
 3. M. Uhlen, C. Zhang, S. Lee, E. Sjöstedt, L. Fagerberg, G. Bidkhori, **R. Benfeitas**, M. Arif, Z. Liu, F. Edfors, K. Sanli, K. von Feilitzen, P. Oksvold, E. Lundberg, S. Hober, P. Nilsson, J. Mattsson, J. M. Schwenk, H. Brunnström, B. Glimelius, T. Sjöblom, P.-H. H. Edqvist, D. Djureinovic, P. Micke, C. Lindskog, A. Mardinoglu, F. Ponten. 2017. “A Pathology Atlas of the Human Cancer Transcriptome.” Science 357(6352):eaan2507. [doi: 10.1126/science.aan2507](https://doi.org/10.1126/science.aan2507)
 2. J. Comas, **R. Benfeitas**, E. Vilaprinyo, A. Sorribas, F. Solsona, G. Farré, J. Berman, U. Zorrilla, T. Capell, G. Sandmann, C. Zhu, P. Christou, R. Alves. 2016. “Identification of Line-Specific Strategies for Improving Carotenoid Production in Synthetic Maize through Data-Driven Mathematical Modeling.” The Plant Journal : For Cell and Molecular Biology. [doi: 10.1111/tpj.13210](https://doi.org/10.1111/tpj.13210)
 1. **R. Benfeitas**, G. Selvaggio, F. Antunes, P. M. B. M. Coelho, A. Salvador. 2014. “Hydrogen Peroxide Metabolism and Sensing in Human Erythrocytes: A Validated Kinetic Model and Reappraisal of the Role of Peroxiredoxin II.” Free Radical Biology & Medicine 74(1):35–49. [doi: 10.1016/j.freeradbiomed.2014.06.007](https://doi.org/10.1016/j.freeradbiomed.2014.06.007)
-
+{: reversed="reversed"}
