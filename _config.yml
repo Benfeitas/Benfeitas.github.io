@@ -21,3 +21,5 @@ menu:
     url: pages/teaching
   - title: Publications
     url: pages/publications
+  - title: About
+    url: pages/about
