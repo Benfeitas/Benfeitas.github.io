@@ -2,6 +2,11 @@
 layout: default
 title: Rui Benfeitas
 ---
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 <table class="center" style="width: 70%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
 <tbody>
 <tr style="height: 18px;">
