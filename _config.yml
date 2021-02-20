@@ -1,0 +1,23 @@
+title: "Rui Benfeitas"
+
+# where things are
+# where things are
+layouts_dir: ./includes/layouts
+includes_dir: ./includes/includes
+sass:
+  sass_dir: ./includes/sass
+
+plugins:
+  - jemoji
+
+defaults:
+  - values:
+      logosnav: true
+
+menu:
+  - title: Home
+    url:
+  - title: Teaching
+    url: teaching
+  - title: Publications
+    url: publications

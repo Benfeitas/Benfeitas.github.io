@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Define colors
+$textgray: #444;
+$baseurl: "{{site.baseurl}}";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "own";
+@import "syntax-highlighting";
