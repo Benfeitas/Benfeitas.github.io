@@ -3,7 +3,7 @@ layout: default
 title: Rui Benfeitas
 ---
 
-<img style="float: right;" src="./includes/assets/img/photo.jpg">
+<img style="float: right;" src="./includes/assets/img/photo.png" width="42">
 
 <p style="margin-bottom: 0px;font-size:20px"> Rui Benfeitas, PhD </p>
 <p style="color:grey; margin-bottom: 5px"> Multi-omics Integration and Systems Biology </p>
