@@ -3,7 +3,7 @@ layout: page
 title: "teaching"
 ---
 
-I am the course leader for the Omics Integration and Systems Biology[1], a national course offered for PhD+ level by NBIS. 
+I am the course leader for the [Omics Integration and Systems Biology][1], a national course offered for PhD+ level by NBIS. 
 
 <table style="border-collapse: collapse; width: 99%; height: 646px;" border="0">
     <tbody>
