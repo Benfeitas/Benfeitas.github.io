@@ -15,7 +15,7 @@ I am the course leader for the [Omics Integration and Systems Biology][1], a nat
             </td>
             <td style="width: 49.977%; text-align: center; height: 200px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="180" height="200" />
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="347" height="180" />
                 </a>
             </td>
         </tr>
