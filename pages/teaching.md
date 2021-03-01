@@ -5,7 +5,7 @@ title: "teaching"
 
 I am the course leader for the [Omics Integration and Systems Biology][1], a national course offered for PhD+ level by NBIS. 
 
-<table style="border-collapse: collapse; width: 99%; height: 646px;" border="0">
+<table style="border-collapse: collapse; width: 99%; height: 210;" border="0">
     <tbody>
         <tr style="height: 200;">
             <td style="width: 49.977%; text-align: center; height: 200px;">
