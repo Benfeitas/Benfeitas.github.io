@@ -24,7 +24,7 @@ title: Rui Benfeitas
     <div class="col s12">
       
       <p>My research focuses in employing systems biology, network analysis and machine learning techniques
-in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. My work focuses in cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
+in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I mostly work with cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
 
 	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a></p>
 	<p><a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a></p>
