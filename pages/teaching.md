@@ -7,15 +7,15 @@ I am the course leader for the Omics Integration and Systems Biology[1], a natio
 
 <table style="border-collapse: collapse; width: 99%; height: 646px;" border="0">
     <tbody>
-        <tr style="height: 353px;">
-            <td style="width: 49.977%; text-align: center; height: 353px;">
+        <tr style="height: 200;">
+            <td style="width: 49.977%; text-align: center; height: 200px;">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
                     <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="200" height="200" />
                 </a>
             </td>
-            <td style="width: 49.977%; text-align: center; height: 353px;">
+            <td style="width: 49.977%; text-align: center; height: 200px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="471" height="348" />
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="200" height="150" />
                 </a>
             </td>
         </tr>
