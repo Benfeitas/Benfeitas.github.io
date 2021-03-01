@@ -3,19 +3,19 @@ layout: page
 title: "teaching"
 ---
 
-I am the course leader for the [Omics Integration and Systems Biology][1], a national course offered for PhD+ level by NBIS. 
+I am the course leader for the [Omics Integration and Systems Biology][1], a national course offered for PhD+ level by NBIS. I regularly contribute with ad-hoc lessons to other courses.
 
 <table style="border-collapse: collapse; width: 99%; height: 210;" border="0">
     <tbody>
         <tr style="height: 200;">
             <td style="width: 49.977%; text-align: center; height: 200px;">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
-                    <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="200" height="200" />
+                    <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="180" height="180" />
                 </a>
             </td>
             <td style="width: 49.977%; text-align: center; height: 200px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="200" height="150" />
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="180" height="200" />
                 </a>
             </td>
         </tr>
