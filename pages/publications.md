@@ -3,13 +3,13 @@ layout: page
 title: "publications"
 ---
 
-### Pre-prints
+## Pre-prints
 19. S. Krishnan, H. Nordqvist, A. T. Ambikan, S. Gupta, S. Svensson-Akusjärvi, F. Mikaeloff, **R. Benfeitas**, E. Saccon, M. Ponnan, J. Esneider Rodriguez, N. Nikouyan, A. Odeh, M. Asghar, M. Sällberg, J. Vesterbacka, P. Nowak, Á. Végvári, A. Sönnerborg, C. Johan Treutiger, U. Neogi. 2021. “Implications of Central Carbon Metabolism in SARS-CoV-2 Replication and 1 Disease Severity 2 3.” [BioRxiv 2021.02.24.432759](https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full)
 18. C. Zhang, S. Lee, G. Bidkhori, **R. Benfeitas**, A. Lovric, S. Chen, M. Uhlen, J. Nielsen, A. Mardinoglu. 2019. “RMetD2: A Tool for Integration of Relative Transcriptomics Data into Genome-Scale Metabolic Models.” [BioRxiv 663096](https://www.biorxiv.org/content/10.1101/663096v1.full)
 17. M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Clausen, J. Wikström, D. Etal, C. Zhang, M. Levin, A. Mardinoglu, J. Boren. 2020. “Revealing Tissue-Specific Metabolic Crosstalk after a Myocardial Infarction.” [BioRxiv 2020.10.28.358556](https://www.biorxiv.org/content/10.1101/2020.10.28.358556v2)
-{:start="18" reversed="reversed"}
+{:start="19" reversed="reversed"}
 
-### Publications
+## Publications
 16. N. Acevedo, **R. Benfeitas**, S. Katayama, S. Bruhn, A. Andersson, G. Wikberg, L. Lundeberg, J. M. Lindvall, D. Greco, J. Kere, C. Söderhäll, A. Scheynius. 2020. “Epigenetic Alterations in Skin Homing CD4+CLA+ T Cells of Atopic Dermatitis Patients.” Scientific Reports 10(1):18020. [doi: 10.1038/s41598-020-74798-z](https://doi.org/10.1038/s41598-020-74798-z)
 15. S. Appelberg, S. Gupta, S. S. Akusjärvi, A. T. Ambikan, F. Mikaeloff, E. Saccon, Á. Végvári, **R. Benfeitas**, M. Sperk, M. Ståhlberg, S. Krishnan, K. Singh, J. M. Penninger, A. Mirazimi, U. Neogi. 2020. “Dysregulation in Akt/MTOR/HIF-1 Signaling Identified by Proteo-Transcriptomics of SARS-CoV-2 Infected Cells.” Emerging Microbes and Infections 9(1):1–36. [doi: 10.1080/22221751.2020.1799723](https://doi.org/10.1080/22221751.2020.1799723)
 14. E. Mohammadi, **R. Benfeitas**, H. Turkez, J. Boren, J. Nielsen, M. Uhlen, A. Mardinoglu. 2020. “Applications of Genome-Wide Screening and Systems Biology Approaches in Drug Repositioning.” Cancers.

@@ -39,7 +39,7 @@ I am the course leader for the [Omics Integration and Systems Biology][1], a nat
 </table>
 
 
-Past teaching:
+## Past teaching
 
 2020	[Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2010)	Stockholm, Sweden  
 2020	[Introduction to Python](https://nbisweden.github.io/workshop-python/)	Online  
