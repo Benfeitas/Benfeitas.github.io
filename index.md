@@ -22,17 +22,12 @@ title: Rui Benfeitas
 <div class="container">
   <div class="row">
     <div class="col s12">
-      
-      <p>My research focuses in employing systems biology, network analysis and machine learning techniques
+    	<p>My research focuses in employing systems biology, network analysis and machine learning techniques
 in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I mostly work with cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data. In the past I've used parameter estimation and kinetic modeling to characterize redox metabolism in human cells.</p>
-		<p> 
-
-	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a><br/><a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a><br/><a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University.</a></p>
-
-	<p><strong>News:</strong></p>
-	<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
+		<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a><br/><a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a><br/><a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University.</a></p>
+		<p><strong>News:</strong></p>
+		<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
     </div>
-    
   </div>
 </div>
 
