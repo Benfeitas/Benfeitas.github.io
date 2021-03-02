@@ -9,7 +9,7 @@ title: about
 &nbsp;&nbsp;[SciLifeLab](www.scilifelab.se) | [DBB Stockholm University](https://www.dbb.su.se/)  
 
 **2016 – 2018:** Postdoctoral researcher  
-&nbsp;&nbsp;[Human Protein Atlas](https://www.proteinatlas.org/) | [Systems Medicine](sysmedicine.com)  
+&nbsp;&nbsp;[Human Protein Atlas](https://www.proteinatlas.org/) | [Sysmedicine](sysmedicine.com)  
 &nbsp;&nbsp;[SciLifeLab](www.scilifelab.se) | [KTH – Royal Institute of Technology](kth.se)  
 
 
