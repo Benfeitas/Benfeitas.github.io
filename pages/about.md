@@ -65,7 +65,7 @@ title: about
 			<strong>2011</strong></td>
 		<td style="width: 80%;">
 			<p>MSc Biochemistry</p>
-			<p><a href="https://ciencias.ulisboa.pt/en"> University of Lisbon, Portugal</a><br/>
+			<p><a href="https://ciencias.ulisboa.pt/en"> University of Lisbon, Portugal</a><p/>
 			<p><em>Thesis: The physiological role of peroxiredoxin 2 in human erythrocytes. A kinetic analysis.</em></p></td>
 	</tr>
 	<tr style="height: 100px;">
