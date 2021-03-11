@@ -10,9 +10,10 @@ border-style: hidden;
 <tr style="height: 100px;">
 <td style="width: 10%;"><img src="../includes/assets/img/logo/nbislogo-green.svg" width="100" height="100" /></td>
 <td style="width: 15%;"><strong>2019 – current</strong></td>
-<td style="width: 70%;">
+<td style="width: 75%;">
 	<p> Senior Bioinformatician<br />
-	[National Bioinformatics Infrastructure Sweden (NBIS)](https://www.nbis.se/about/staff/rui-benfeitas/)<br />[SciLifeLab](www.scilifelab.se) | [DBB Stockholm University](https://www.dbb.su.se/)</p>
+	<a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden (NBIS)</a><br />
+	<a href="www.scilifelab.se">SciLifeLab</a> | <a href="https://www.dbb.su.se/">DBB Stockholm University]</a></p>
 </td>
 </tr>
 <tr style="height: 100px;">
