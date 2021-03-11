@@ -31,8 +31,6 @@ title: about
 </table>
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-
 
 ## Education
 <table class="left" style="width: 100%; border-collapse: collapse; height: 450px;" border="1">
@@ -79,6 +77,8 @@ title: about
 	</tr>
 </tbody>
 </table>
+
+<p>&nbsp;</p>
 
 ## Contact
 
