@@ -29,7 +29,7 @@ title: about
 </tr>
 </tbody>
 </table>
-
+<br /><br /><br />
 
 
 ## Education
@@ -38,30 +38,30 @@ title: about
 <tr style="height: 100px;">
 	<td style="width: 10%;">
 		<img src="../includes/assets/img/logo/UC.png" width="100" height="100" /></td>
-	<td style="width: 15%;">
+	<td style="width: 10%;">
 		<strong>2016</strong></td>
-	<td style="width: 75%;">
+	<td style="width: 80%;">
 		<p> PhD Computational Biology<br />
 		<a href="https://www.uc.pt/fctuc">University of Coimbra, Portugal</a><br />
 		<a href="http://www.cnbc.pt/">Center for Neuroscience and Cell Biology</a><br />
 		<a href="http://www.cnbc.pt/research/department_group_show.asp?iddep=1947&idgrp=1310">Computational and Systems Biology Group</a><br />
 		<em>Thesis: Active and passive defenses against oxidative stress: a computational study </em></p></td>
 </tr>
-<tr style="height: 100px;">
+<tr style="height: 150px;">
 	<td style="width: 10%;">
-		<img src="../includes/assets/img/logo/ULl.png" width="100" height="100" /></td>
-	<td style="width: 15%;">
+		<img src="../includes/assets/img/logo/ULl.png" width="100" height="150" /></td>
+	<td style="width: 10%;">
 		<strong>2014</strong></td>
-	<td style="width: 75%;">
+	<td style="width: 80%;">
 		<p>Visiting PhD student<br />
 		<a href="https://www.irblleida.org/en/research/14/systems-biology-and-statistical-methods-for-biomedical-research"> University of Lleida, Spain</a></p></td>
 </tr>
 <tr style="height: 100px;">
 	<td style="width: 10%;">
 		<img src="../includes/assets/img/logo/UL.png" width="100" height="100" /></td>
-	<td style="width: 15%;">
+	<td style="width: 10%;">
 		<strong>2011</strong></td>
-	<td style="width: 75%;">
+	<td style="width: 80%;">
 		<p>MSc Biochemistry<br />
 		<a href="https://ciencias.ulisboa.pt/en"> University of Lisbon, Portugal</a><br/>
 		<em>Thesis: The physiological role of peroxiredoxin 2 in human erythrocytes. A kinetic analysis.</em></p></td>
@@ -69,9 +69,9 @@ title: about
 <tr style="height: 100px;">
 	<td style="width: 10%;">
 		<img src="../includes/assets/img/logo/UC.png" width="100" height="100" /></td>
-	<td style="width: 15%;">
+	<td style="width: 10%;">
 		<strong>2008</strong></td>
-	<td style="width: 75%;">
+	<td style="width: 80%;">
 		<p>BSc Biology<br />
 		<a href="https://www.uc.pt/fctuc"> University of Coimbra, Portugal</a></p></td>
 </tr>
