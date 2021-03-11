@@ -37,7 +37,7 @@ border-style: hidden;
 <tbody>
 <tr style="height: 100px;">
 	<td style="width: 10%;">
-		<img src="../includes/assets/img/logo/nbislogo-green.svg" width="100" height="100" /></td>
+		<img src="../includes/assets/img/logo/UC.png" width="100" height="100" /></td>
 	<td style="width: 15%;">
 		<strong>2016</strong></td>
 	<td style="width: 75%;">
@@ -49,7 +49,7 @@ border-style: hidden;
 </tr>
 <tr style="height: 100px;">
 	<td style="width: 10%;">
-		<img src="../includes/assets/img/logo/ULl.png" width="30" height="30" /></td>
+		<img src="../includes/assets/img/logo/ULl.png" width="100" height="100" /></td>
 	<td style="width: 15%;">
 		<strong>2014</strong></td>
 	<td style="width: 75%;">
@@ -58,7 +58,7 @@ border-style: hidden;
 </tr>
 <tr style="height: 100px;">
 	<td style="width: 10%;">
-		<img src="../includes/assets/img/logo/UL.png" width="30" height="30" /></td>
+		<img src="../includes/assets/img/logo/UL.png" width="100" height="100" /></td>
 	<td style="width: 15%;">
 		<strong>2011</strong></td>
 	<td style="width: 75%;">
@@ -68,7 +68,7 @@ border-style: hidden;
 </tr>
 <tr style="height: 100px;">
 	<td style="width: 10%;">
-		<img src="../includes/assets/img/logo/UC.png" width="30" height="30" /></td>
+		<img src="../includes/assets/img/logo/UC.png" width="100" height="100" /></td>
 	<td style="width: 15%;">
 		<strong>2008</strong></td>
 	<td style="width: 75%;">
