@@ -79,3 +79,7 @@ title: about
 	</tr>
 </tbody>
 </table>
+
+## Contact
+
+rui.benfeitas [at] scilifelab.se
