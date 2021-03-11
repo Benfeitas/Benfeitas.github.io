@@ -32,7 +32,6 @@ title: about
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 
 ## Education
@@ -78,11 +77,10 @@ title: about
 		<p>BSc Biology</p>
 		<p><a href="https://www.uc.pt/fctuc"> University of Coimbra, Portugal</a></p></td>
 </tr>
-
 </tbody>
 </table>
 
 
 
-## Contact
+## Contact  
 rui.benfeitas [at] scilifelab.se
