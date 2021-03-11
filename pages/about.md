@@ -33,7 +33,7 @@ title: about
 <p>&nbsp;</p>
 
 ## Education
-<table class="left" style="width: 100%; border-collapse: collapse; height: 450px;" border="1">
+<table class="left" style="width: 100%; border-collapse: collapse; height: 400px;" border="1">
 <tbody>
 	<tr style="height: 100px;">
 		<td style="width: 10%;">
@@ -56,9 +56,9 @@ title: about
 			<p>Visiting PhD student</p>
 			<p><a href="https://www.irblleida.org/en/research/14/systems-biology-and-statistical-methods-for-biomedical-research"> University of Lleida, Spain</a></p></td>
 	</tr>
-	<tr style="height: 150px;">
+	<tr style="height: 100px;">
 		<td style="width: 10%;">
-			<img src="../includes/assets/img/logo/UL.png" width="100" height="150" /></td>
+			<img src="../includes/assets/img/logo/UL.png" width="100" height="80" /></td>
 		<td style="width: 10%;">
 			<strong>2011</strong></td>
 		<td style="width: 80%;">
