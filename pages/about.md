@@ -4,20 +4,20 @@ title: about
 ---
 
 ## Past positions
-<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 200px;" border="1">
+<table class="left" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 200px;" border="1">
 <tbody>
 <tr style="height: 100px;">
 <td style="width: 15%;"><img src="../includes/assets/img/logo/nbislogo-green.svg" width="100" height="100" /></td>
-<td style="width: 15%;"><strong>2019 – current</strong></td>
-<td style="width: 60%;"><p> Senior Bioinformatician</p>
+<td style="width: 5%;"><strong>2019 – current</strong></td>
+<td style="width: 70%;"><p> Senior Bioinformatician</p>
 &nbsp;&nbsp;<p>[National Bioinformatics Infrastructure Sweden (NBIS)](https://www.nbis.se/about/staff/rui-benfeitas/)</p>
 &nbsp;&nbsp;<p>[SciLifeLab](www.scilifelab.se) | [DBB Stockholm University](https://www.dbb.su.se/)</p>
 </td>
 </tr>
 <tr style="height: 100px;">
 <td style="width: 15%;"><img src="../includes/assets/img/logo/KTH.png" width="100" height="100" /> </td>
-<td style="width: 15%;"><strong>2016 – 2018:</strong></td>
-<td style="width: 60%;"><p>Postdoctoral researcher</p>  
+<td style="width: 5%;"><strong>2016 – 2018:</strong></td>
+<td style="width: 70%;"><p>Postdoctoral researcher</p>  
 &nbsp;&nbsp;<p>[Human Protein Atlas](https://www.proteinatlas.org/) | [Sysmedicine](sysmedicine.com)</p>
 &nbsp;&nbsp;<p>[SciLifeLab](www.scilifelab.se) | [KTH – Royal Institute of Technology](kth.se)</p>  
 </td>
