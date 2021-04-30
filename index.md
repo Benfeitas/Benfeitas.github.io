@@ -27,6 +27,7 @@ title: Rui Benfeitas
     <div class="col s12">
     	<p>My research employs systems biology, network analysis and machine learning techniques in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. My work focuses in cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data. In the past I've used parameter estimation and kinetic modeling to characterize redox metabolism in human cells.</p><br/>
 		<p><strong>News:</strong></p>
+		<p>- 30/04/2021 - New <a href="https://www.medrxiv.org/content/10.1101/2021.04.01.21254778v1">pre-print out</a> for our work in metabolomic characterization in HIV of the COCOMO cohort.</p>
 		<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
     </div>
   </div>
