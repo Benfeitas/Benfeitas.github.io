@@ -3,7 +3,7 @@ layout: page
 title: "teaching"
 ---
 
-I am the course leader for the [Omics Integration and Systems Biology][1], a national course offered for PhD+ level by NBIS. I regularly contribute with ad-hoc lessons to other courses.
+I am one of the deputy training coordinators at NBIS. I am also course leader for the [Omics Integration and Systems Biology][1], an international course offered for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
 
 <table style="border-collapse: collapse; width: 99%; height: 210;" border="0">
     <tbody>
@@ -41,6 +41,7 @@ I am the course leader for the [Omics Integration and Systems Biology][1], a nat
 
 ## Past teaching
 
+2021    [Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2104)    Online  
 2020	[Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2010)	Stockholm, Sweden  
 2020	[Introduction to Python](https://nbisweden.github.io/workshop-python/)	Online  
 2020	[Systems Biology of Human Metabolism and Gut Microbiome](https://sysmedicine.github.io/phd2020/)	Stockholm, Sweden  
@@ -54,4 +55,4 @@ I am the course leader for the [Omics Integration and Systems Biology][1], a nat
 2014	Systems Biology	Lleida, Spain    
 2012	[Molecular Systems Biology](http://beb.cnbc.pt/det_courses.asp?id=587)	Coimbra, Portugal
 
-[1]: https://nbisweden.github.io/workshop_omics_integration/
+[1]: https://uppsala.instructure.com/courses/52162

@@ -14,6 +14,8 @@ title: Rui Benfeitas
 	<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="20"></a>
 	<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="20"></a>
 	<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
+	<p>Senior bioinformatician</p>
+	<p>Deputy Training Coordinator</p><br>
 	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a></p>
 	<p><a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a></p>
 	<p><a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University</a></p>
@@ -27,6 +29,7 @@ title: Rui Benfeitas
     <div class="col s12">
     	<p>My research employs systems biology, network analysis and machine learning techniques in integration of high throughput data in disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. My work focuses in cancer, metabolic and infectious diseases, in particular through the usage of transcriptomic, proteomic, metabolomic, and epigenomic data. In the past I've used parameter estimation and kinetic modeling to characterize redox metabolism in human cells.</p><br/>
 		<p><strong>News:</strong></p>
+		<p>- 11/05/2021 - Our work in CVD that was previously in <a href="https://www.biorxiv.org/content/10.1101/2020.10.28.358556v2">biorxiv</a> is now <a href="https://elifesciences.org/articles/66921">published in eLife</a>.
 		<p>- 30/04/2021 - New <a href="https://www.medrxiv.org/content/10.1101/2021.04.01.21254778v1">pre-print out</a> for our work in metabolomic characterization in HIV of the COCOMO cohort.</p>
 		<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
     </div>
