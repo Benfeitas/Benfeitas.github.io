@@ -10,7 +10,7 @@ title: "publications"
 {:start="20" reversed="reversed"}
 
 ## Publications
-17. M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Clausen, J. Wikström, D. Etal, C. Zhang, M. Levin, A. Mardinoglu, J. Boren. 2021. “Integrative transcriptomic analysis of tissue-specific metabolic crosstalk after myocardial infarction
+17. M. Arif, M. Klevstig, **R. Benfeitas**, S. Doran, H. Turkez, M. Uhlén, M. Clausen, J. Wikström, D. Etal, C. Zhang, M. Levin, A. Mardinoglu, J. Boren. 2021. “Integrative transcriptomic analysis of tissue-specific metabolic crosstalk after myocardial infarction ([highlighted in eLife](https://elifesciences.org/articles/69863))
 .” [eLife 10.7554/eLife.66921](https://elifesciences.org/articles/66921)
 16. N. Acevedo, **R. Benfeitas**, S. Katayama, S. Bruhn, A. Andersson, G. Wikberg, L. Lundeberg, J. M. Lindvall, D. Greco, J. Kere, C. Söderhäll, A. Scheynius. 2020. “Epigenetic Alterations in Skin Homing CD4+CLA+ T Cells of Atopic Dermatitis Patients.” Scientific Reports 10(1):18020. [doi: 10.1038/s41598-020-74798-z](https://doi.org/10.1038/s41598-020-74798-z)
 15. S. Appelberg, S. Gupta, S. S. Akusjärvi, A. T. Ambikan, F. Mikaeloff, E. Saccon, Á. Végvári, **R. Benfeitas**, M. Sperk, M. Ståhlberg, S. Krishnan, K. Singh, J. M. Penninger, A. Mirazimi, U. Neogi. 2020. “Dysregulation in Akt/MTOR/HIF-1 Signaling Identified by Proteo-Transcriptomics of SARS-CoV-2 Infected Cells.” Emerging Microbes and Infections 9(1):1–36. [doi: 10.1080/22221751.2020.1799723](https://doi.org/10.1080/22221751.2020.1799723)
