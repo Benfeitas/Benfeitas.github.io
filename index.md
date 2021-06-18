@@ -14,8 +14,7 @@ title: Rui Benfeitas
 	<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="20"></a>
 	<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="20"></a>
 	<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
-	<p>Senior bioinformatician</p>
-	<p>Deputy Training Coordinator</p><br>
+	<p>Senior bioinformatician & Vice Training Coordinator</p><br>
 	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden</a></p>
 	<p><a href="www.scilifelab.se">Science for Life Laboratory Stockholm</a></p>
 	<p><a href="https://www.dbb.su.se/">Department of Biochemistry and Biophysics, Stockholm University</a></p>
