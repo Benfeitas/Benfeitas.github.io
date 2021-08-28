@@ -3,7 +3,9 @@ layout: page
 title: "teaching"
 ---
 
-I am one of the deputy training coordinators at NBIS. I am also course leader for the [Omics Integration and Systems Biology][1], an international course offered for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
+I am Vice Training coordinator for national bioinformatics training at [NBIS / ELIXIR-Sweden](www.nbis.se), where I coordinate about 20 different teaching events per year.  
+  
+I am also course leader for the [Omics Integration and Systems Biology][1], an international course offered for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
 
 <table style="border-collapse: collapse; width: 99%; height: 210;" border="0">
     <tbody>
@@ -41,6 +43,9 @@ I am one of the deputy training coordinators at NBIS. I am also course leader fo
 
 ## Past teaching
 
+2021    [Elixir Omics Integration and Systems Biology](https://uppsala.instructure.com/courses/52162)
+2021    [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)
+2021    [Quick and clean: advanced Python for data science in biology](https://www.scilifelab.se/event/quick-and-clean-advanced-python-for-data-science-in-biology-online/)
 2021    [Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2104)    Online  
 2020	[Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2010)	Stockholm, Sweden  
 2020	[Introduction to Python](https://nbisweden.github.io/workshop-python/)	Online  
