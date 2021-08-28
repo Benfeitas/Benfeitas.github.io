@@ -21,11 +21,16 @@ title: Rui Benfeitas
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
 </tr>
+</tbody>
+</table>
+
 <!-- Summary -->
+<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
+<tbody>
 <tr style="height: 18px;">
 My research focuses in employing systems biology, network analysis and machine learning techniques
-for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine characterizations in cancer, metabolic and infectious diseases, by combining transcriptomic, proteomic, metabolomic, and epigenomic data. <br/>
-	</tr>
+for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine characterizations in cancer, metabolic and infectious diseases, by combining transcriptomic, proteomic, metabolomic, and epigenomic data.
+</tr>
 <!-- NEWS -->
 <tr style="height: 18px;">
 	<p><strong>News:</strong></p>
