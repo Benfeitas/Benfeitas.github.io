@@ -9,14 +9,14 @@ title: Rui Benfeitas
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
 		<h3>Multi-omics Integration and Systems Biology</h3>
 		<p>Senior bioinformatician & Vice Training Coordinator</p><br>
-		<a href="http://twitter.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" width="40" height="40"></a>
-		<a href="https://scholar.google.se/citations?user=TNHVVA4AAAAJ"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" width="40" height="40"></a>
-		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" width="40" height="40"></a>
-		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="40"></a>
-		<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="40"></a>
+		<a href="http://twitter.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" height="30"></a>
+		<a href="https://scholar.google.se/citations?user=TNHVVA4AAAAJ"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
+		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
+		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="30"></a>
+		<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="30"></a>
 		<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:40px;padding:5px 0px 10px 5px" ></a>
 		<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:40px;padding:5px 0px 10px 5px" ></a>
-		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:60px;padding:5px 0px 5px 5px" ></a>
+		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:40px;padding:5px 0px 5px 5px" ></a>
 		<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
