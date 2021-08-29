@@ -12,7 +12,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
         <tr style="height: 160;">
             <td style="width: 30%; text-align: left; height: 200px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="20%"/>
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
                 </a>
             </td>
             <td style="width: 70%; text-align: left; height: 10px;">
@@ -24,7 +24,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
         <tr style="height: 10px;">
             <td style="width: 30%; text-align: left; height: 200px;">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
-                    <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="20%" />
+                    <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="100%" />
                 </a>
             </td>
             <td style="width: 70%; text-align: left; height: 10px;">
