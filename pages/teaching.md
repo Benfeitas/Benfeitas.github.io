@@ -43,9 +43,9 @@ I am also course leader for the [Omics Integration and Systems Biology][1], an i
 
 ## Past teaching
 
-2021    [Elixir Omics Integration and Systems Biology](https://uppsala.instructure.com/courses/52162)
-2021    [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)
-2021    [Quick and clean: advanced Python for data science in biology](https://www.scilifelab.se/event/quick-and-clean-advanced-python-for-data-science-in-biology-online/)
+2021    [Elixir Omics Integration and Systems Biology](https://uppsala.instructure.com/courses/52162)   Online
+2021    [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)   Online
+2021    [Quick and clean: advanced Python for data science in biology](https://www.scilifelab.se/event/quick-and-clean-advanced-python-for-data-science-in-biology-online/) Online
 2021    [Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2104)    Online  
 2020	[Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2010)	Stockholm, Sweden  
 2020	[Introduction to Python](https://nbisweden.github.io/workshop-python/)	Online  
