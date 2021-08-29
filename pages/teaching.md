@@ -17,7 +17,7 @@ I am also course leader for the [Omics Integration and Systems Biology][1], an i
             </td>
             <td style="width: 30%; text-align: center; height: 10px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <span style="font-size: 18pt;"><strong>Course Github</strong> - updated contents and record of previous course instances</span>
+                    <strong>Course Github</strong> - updated contents and record of previous course instances
                 </a>
             </td>
         </tr>
@@ -29,7 +29,7 @@ I am also course leader for the [Omics Integration and Systems Biology][1], an i
             </td>
             <td style="width: 30%; text-align: center; height: 10px;">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
-                    <span style="font-size: 18pt;"><strong>Course Homepage</strong> - presentations, notebooks, and preparatory materials</span>
+                    <strong>Course Homepage</strong> - presentations, notebooks, and preparatory materials
                 </a>
             </td>
             <br><br>
