@@ -7,29 +7,29 @@ I am Vice Training coordinator for national bioinformatics training at [NBIS / E
   
 I am also course leader for the [Omics Integration and Systems Biology][1], an international course offered for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
 
-<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 210;" border="0">
+<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 170;" border="0">
     <tbody>
-        <tr style="height: 200;">
-            <td style="width: 50%; text-align: center; height: 200px;">
+        <tr style="height: 160;">
+            <td style="width: 70%; text-align: center; height: 200px;">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
                     <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="20%"/>
                 </a>
             </td>
-            <td style="width: 50%; text-align: center; height: 10px;">
-                <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
-                    <span style="font-size: 18pt;"><strong>Course Homepage</strong></span>
+            <td style="width: 30%; text-align: center; height: 10px;">
+                <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
+                    <span style="font-size: 18pt;"><strong>Course Github</strong> - updated contents and record of previous course instances</span>
                 </a>
             </td>
         </tr>
         <tr style="height: 10px;">
-            <td style="width: 50%; text-align: center; height: 200px;">
+            <td style="width: 70%; text-align: center; height: 200px;">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
                     <img src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2019-09-12/751389607265_d59c0d58846bb2db7123_132.jpg" width="20%" />
                 </a>
             </td>
-            <td style="width: 50%; text-align: center; height: 10px;">
-                <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
-                    <span style="font-size: 18pt;"><strong>Course Github</strong></span>
+            <td style="width: 30%; text-align: center; height: 10px;">
+                <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
+                    <span style="font-size: 18pt;"><strong>Course Homepage</strong> - presentations, notebooks, and preparatory materials</span>
                 </a>
             </td>
             <br><br>
