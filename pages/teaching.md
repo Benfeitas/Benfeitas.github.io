@@ -5,7 +5,7 @@ title: "teaching"
 
 I am Vice Training coordinator for national bioinformatics training at [NBIS / ELIXIR-Sweden](www.nbis.se), where I coordinate about 20 different teaching events per year.  
   
-I am also course leader for the [Omics Integration and Systems Biology][1], an international course offered for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
+I am also course leader for [Omics Integration and Systems Biology][1], course offered nationally and internationally for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
 
 <table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 170;" border="0">
     <tbody>
