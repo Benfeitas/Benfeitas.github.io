@@ -17,7 +17,6 @@ title: Rui Benfeitas
 		<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:30px;padding:0px 0px 0px 5px" ></a>
 		<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:30px;padding:0px 0px 0px 5px" ></a>
 		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:30px;padding:0px 0px 0px 5px" ></a>
-		<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
 </tr>
