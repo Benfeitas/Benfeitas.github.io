@@ -14,9 +14,9 @@ title: Rui Benfeitas
 		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
 		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="30"></a>
 		<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="30"></a>
-		<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:40px;padding:5px 0px 10px 5px" ></a>
-		<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:40px;padding:5px 0px 10px 5px" ></a>
-		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:40px;padding:5px 0px 5px 5px" ></a>
+		<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:40px;padding:0px 0px 0px 5px" ></a>
+		<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:40px;padding:0px 0px 0px 5px" ></a>
+		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:40px;padding:0px 0px 0px 5px" ></a>
 		<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
