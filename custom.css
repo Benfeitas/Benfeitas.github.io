@@ -62,3 +62,9 @@ table.center {
   clear: both;
   display: table;
 } 
+
+/* table alignment of text*/
+td.leftAlign {text-align:left;}
+td.rightAlign {text-align:right;}
+td.center {text-align:center;}
+td.justify {text-align:justify;}

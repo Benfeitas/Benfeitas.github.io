@@ -15,9 +15,9 @@ title: Rui Benfeitas
 	<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="20"></a>
 	<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="20"></a>
 	<p>Contact: rui.benfeitas[at]scilifelab.se</p><br>
-	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:20px;padding:5px 0px 10px 5px" >National Bioinformatics Infrastructure Sweden</a></p>
-	<p><a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:20px;padding:5px 0px 10px 5px" >Science for Life Laboratory Stockholm</a></p>
-	<p><a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:20px;padding:5px 0px 5px 5px" >Department of Biochemistry and Biophysics, Stockholm University</a></p>
+	<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:40px;padding:5px 0px 10px 5px" >National Bioinformatics Infrastructure Sweden</a>
+	<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:40px;padding:5px 0px 10px 5px" >Science for Life Laboratory Stockholm</a>
+	<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:40px;padding:5px 0px 5px 5px" >Department of Biochemistry and Biophysics, Stockholm University</a>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
 </tr>
@@ -27,12 +27,12 @@ title: Rui Benfeitas
 <!-- Summary -->
 <table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
 <tbody>
-<tr style="height: 18px;">
+<tr style="height: 18px;" class="justify">
 My research focuses in employing systems biology, network analysis and machine learning techniques
 for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine characterizations in cancer, metabolic and infectious diseases, by combining transcriptomic, proteomic, metabolomic, and epigenomic data.
 </tr>
 <!-- NEWS -->
-<tr style="height: 18px;">
+<tr style="height: 18px;" >
 	<p><strong>News:</strong></p>
 		<p>- 22/07/2021 - I organized and taught a short tutorial in omics integration and systems biology at the <a href="https://nbisweden.github.io/workshop_omicsint_ISMBECCB/"> ISMB / ECCB 2021</a>.
 		<p>- 11/05/2021 - Our work in CVD that was previously in <a href="https://www.biorxiv.org/content/10.1101/2020.10.28.358556v2">biorxiv</a> is now <a href="https://elifesciences.org/articles/66921">published in eLife</a>. See also the <a href="https://elifesciences.org/articles/69863">highlight</a>.
