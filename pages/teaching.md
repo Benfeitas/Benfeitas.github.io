@@ -9,25 +9,25 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
 
 <table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 170;" border="0">
     <tbody>
-        <tr style="height: 160;">
-            <td style="width: 30%; text-align: left; height: 200px;">
+        <tr style="height: 170;">
+            <td style="width: 30%; text-align: left">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
                     <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
                 </a>
             </td>
-            <td style="width: 70%; text-align: left; height: 10px;">
+            <td style="width: 70%; text-align: left">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
                     <strong>Course Github</strong> - updated contents and record of previous course instances
                 </a>
             </td>
         </tr>
-        <tr style="height: 10px;">
-            <td style="width: 30%; text-align: left; height: 200px;">
+        <tr style="height: 170px;">
+            <td style="width: 30%; text-align: left">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
-                    <img src="./includes/assets/img/netbig.png" width="100%" alt=""/>
+                    <img src="./includes/assets/img/net.png" width="100%" alt=""/>
                 </a>
             </td>
-            <td style="width: 70%; text-align: left; height: 10px;">
+            <td style="width: 70%; text-align: left">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/">
                     <strong>Course Homepage</strong> - presentations, notebooks, and preparatory materials
                 </a>
