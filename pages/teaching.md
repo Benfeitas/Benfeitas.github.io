@@ -22,8 +22,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
         </tr>
         <tr style="height: 80;">
             <td style="width: 30%; text-align: left">
-                <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
-                    <img src="./includes/assets/img/net.png" alt="" width="100%"/>
+                <a title="Homepage" href="https://uppsala.instructure.com/courses/52162/files/1922819/preview" alt="" width="100%"/>
                 </a>
             </td>
             <td style="width: 70%; text-align: left">
