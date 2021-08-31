@@ -23,19 +23,19 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
         <tr style="height: 80px;">
             <td style="width: 30%; text-align: left">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
-                    <img src="./includes/assets/img/net.png" width="100%" alt=""/>
+                    this
                 </a>
             </td>
             <td style="width: 70%; text-align: left">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/"><strong>
                     Course Homepage</strong></a> - presentations, notebooks, and preparatory materials
-                
             </td>
             <br><br>
         </tr>
     </tbody>
 </table>
 
+<img src="./includes/assets/img/net2.png" width="100%" alt=""/>
 
 ## Past teaching
 **2021**  
