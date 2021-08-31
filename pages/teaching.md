@@ -35,13 +35,20 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
     </tbody>
 </table>
 
-<p><img src="./includes/assets/img/net2.png" width="100%" alt=""/><p>
-<p><img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" ><p>
+<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
+<tbody>
+<tr style="height: 18px;" class="tr.justify">
+    <p><a href='https://uppsala.instructure.com/courses/52162'><img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >Omics Integration and Systems Biology</a>, a course that we have taught several times in the past both <a href='https://uppsala.instructure.com/courses/52162'>nationally and internationally.</a> I regularly <a href="./pages/teaching.html">contribute to other courses</a> with ad-hoc lessons.</p>
+</tr>
+</tbody>
+</table>
+<img src="./includes/assets/img/net2.png" width="100%" alt=""/><p>
+<img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >
 
 ## Past teaching
 **2021**  
 - [Elixir Omics Integration and Systems Biology](https://uppsala.instructure.com/courses/52162)   Online     
--  [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)   Online  
+- [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)   Online  
 - [Quick and clean: advanced Python for data science in biology](https://www.scilifelab.se/event/quick-and-clean-advanced-python-for-data-science-in-biology-online/) Online   
 - [Omics Integration and Systems Biology](https://github.com/NBISweden/workshop_omics_integration/tree/course2104)    Online     
 **2020**  
