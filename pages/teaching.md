@@ -36,6 +36,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
 </table>
 
 <img src="./includes/assets/img/net2.png" width="100%" alt=""/>
+<img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >
 
 ## Past teaching
 **2021**  
