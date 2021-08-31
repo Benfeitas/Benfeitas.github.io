@@ -20,27 +20,18 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
                 Course Github</strong></a> - updated contents and record of previous course instances
             </td>
         </tr>
-        <<!-- tr style="height: 80;">
+                <tr style="height: 80;">
             <td style="width: 30%; text-align: left">
-                <a title="Homepage" href="https://uppsala.instructure.com/courses/52162" alt="" width="100%"/>
-                <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
+                <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
+                    <img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
                 </a>
             </td>
             <td style="width: 70%; text-align: left">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162"><strong>
                 Course homepage</strong></a> - presentations, notebooks, and preparatory materials
             </td>
-        </tr> -->
-<!--         <tr style="height: 80px;">
-            <td style="width: 30%; text-align: left">
-                <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
-                    this
-                </a>
-            </td>
-            <td style="width: 70%; text-align: left">
-                <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/"><strong>
-                    Course Homepage</strong></a> - presentations, notebooks, and preparatory materials
-            </td> -->
+        </tr>
     </tbody>
 </table>
 <br><br>
