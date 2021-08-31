@@ -20,7 +20,18 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
                 Course Github</strong></a> - updated contents and record of previous course instances
             </td>
         </tr>
-        <tr style="height: 80px;">
+        <tr style="height: 80;">
+            <td style="width: 30%; text-align: left">
+                <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
+                    <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
+                </a>
+            </td>
+            <td style="width: 70%; text-align: left">
+                <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration"><strong>
+                Course Github</strong></a> - updated contents and record of previous course instances
+            </td>
+        </tr>
+<!--         <tr style="height: 80px;">
             <td style="width: 30%; text-align: left">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
                     this
@@ -29,21 +40,11 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
             <td style="width: 70%; text-align: left">
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/"><strong>
                     Course Homepage</strong></a> - presentations, notebooks, and preparatory materials
-            </td>
+            </td> -->
             <br><br>
         </tr>
     </tbody>
 </table>
-
-<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
-<tbody>
-<tr style="height: 18px;" class="tr.justify">
-    <p><a href='https://uppsala.instructure.com/courses/52162'><img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >Omics Integration and Systems Biology</a>, a course that we have taught several times in the past both <a href='https://uppsala.instructure.com/courses/52162'>nationally and internationally.</a> I regularly <a href="./pages/teaching.html">contribute to other courses</a> with ad-hoc lessons.</p>
-</tr>
-</tbody>
-</table>
-<img src="./includes/assets/img/net2.png" width="100%" alt=""/><p>
-<img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >
 
 ## Past teaching
 **2021**  
