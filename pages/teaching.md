@@ -41,10 +41,9 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
                 <a title="Homepage" href="https://nbisweden.github.io/workshop_omics_integration/"><strong>
                     Course Homepage</strong></a> - presentations, notebooks, and preparatory materials
             </td> -->
-            <br><br>
-        </tr>
     </tbody>
 </table>
+<br><br>
 
 ## Past teaching
 **2021**  
