@@ -7,9 +7,9 @@ I am Vice Training coordinator for national bioinformatics training at [NBIS / E
   
 I am also course leader for [Omics Integration and Systems Biology][1], course offered nationally and internationally for PhD+ level researchers by NBIS/ELIXIR-Sweden. I regularly contribute with ad-hoc lessons to other courses.
 
-<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 160;" border="0">
+<table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 100;" border="0">
     <tbody>
-        <tr style="height: 80;">
+        <tr style="height: 50;">
             <td style="width: 30%; text-align: left">
                 <a title="Github" href="https://github.com/NBISweden/workshop_omics_integration">
                     <img src="https://cdn.iowacomputergurus.com/blog/another-genius-move-from-microsoft-acquires-github-for-7-5-billion-in-stock.png" alt="" width="100%"/>
@@ -20,7 +20,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
                 Course Github</strong></a> - updated contents and record of previous course instances
             </td>
         </tr>
-                <tr style="height: 80;">
+                <tr style="height: 50;">
             <td style="width: 30%; text-align: left">
                 <a title="Homepage" href="https://uppsala.instructure.com/courses/52162">
                     <img src="https://raw.githubusercontent.com/Benfeitas/Benfeitas.github.io/main/includes/assets/img/net.png" alt="" width="100%"/>
@@ -35,7 +35,7 @@ I am also course leader for [Omics Integration and Systems Biology][1], course o
 </table>
 <br><br>
 
-## Past teaching
+
 **2021**  
 - [Elixir Omics Integration and Systems Biology](https://uppsala.instructure.com/courses/52162)   Online     
 - [Practical Introduction to multi-omics integration and network analysis](https://nbisweden.github.io/workshop_omicsint_ISMBECCB/)   Online  
