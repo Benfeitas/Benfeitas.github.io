@@ -46,7 +46,7 @@ title: Rui Benfeitas
 	</tr>
 <tr style="height: 18px;" >
 	<details>
-    <summary><strong>Past news</strong></summary>
+    <summary><strong>Past news</strong> (click to expand):</summary>
     <p>-PLACEHOLDER</p>
 </details>
 </tr>
