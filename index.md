@@ -44,5 +44,10 @@ title: Rui Benfeitas
 		<p>- 30/04/2021 - New <a href="https://www.medrxiv.org/content/10.1101/2021.04.01.21254778v1">pre-print out</a> for our work in metabolomic characterization in HIV of the COCOMO cohort.</p>
 		<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
 	</tr>
+<tr style="height: 18px;" >
+	<details>
+    <summary><strong>Past news</strong></summary>
+    <p>-PLACEHOLDER</p>
+</tr>
 </tbody>
 </table>
