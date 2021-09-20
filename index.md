@@ -48,6 +48,7 @@ title: Rui Benfeitas
 	<details>
     <summary><strong>Past news</strong></summary>
     <p>-PLACEHOLDER</p>
+</details>
 </tr>
 </tbody>
 </table>
