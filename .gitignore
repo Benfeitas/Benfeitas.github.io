@@ -10,3 +10,4 @@ admin_docs/
 *~
 .DS_Store
 Gemfile.lock
+_extras/notebooks/session_topology/data/association_matrix.tsv
