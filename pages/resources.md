@@ -16,8 +16,8 @@ The following images are ready to run [the notebooks below](#notebooks).
 
 ## Notebooks
 
-- `Data pre-processing notebook` - data overview, cleaning, imputation, anomaly detection, dimensionality reduction, and normalization. The notebook can be found [here](../extras/notebooks/session_preprocessing/preprocessing.html)
+- [Data pre-processing notebook](../extras/notebooks/session_preprocessing/preprocessing.html) - data overview, cleaning, imputation, anomaly detection, dimensionality reduction, and normalization.
 
-- `Multi-omic network analysis` - network inference, topology, centrality analysis, and community interrogation in a transcriptomic / metabolomic network. The notebook can be found [here](../extras/notebooks/session_topology/lab.html)
+- [Multi-omic network analysis](../extras/notebooks/session_topology/lab.html) - network inference, topology, centrality analysis, and community interrogation in a transcriptomic / metabolomic network.
 
-- `Introduction go Genome-scale metabolic modeling in python` - brief introduction into flux prediction and analysis of a genome-scale metabolic network. The notebook can be found [here](../extras/notebooks/session_gems/lab.html)
+- [Introduction to Genome-scale metabolic modeling in python](../extras/notebooks/session_gems/lab.html) - brief introduction into flux prediction and analysis of a genome-scale metabolic network.
