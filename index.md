@@ -38,18 +38,19 @@ title: Rui Benfeitas
 <!-- NEWS -->
 <tr style="height: 18px;" >
 	<br><p><strong>News:</strong></p>
-		<p>- 10/08/2021 - I hosted three open seminars in systems biology broadcasted online. <br>
-			&emsp; - 06/08/2021: <a href="https://www.scilifelab.se/event/big-talks-1/"> Pedro Beltrao - "BiG Talks – Network based analysis of 1002 GWAS study defines a pleiotropy map of human cell biology"</a> (<a href="https://www.youtube.com/watch?v=9eBCRWVLQTA">youtube</a>); <br>
-			&emsp; - 10/08/2021: <a href="https://www.scilifelab.se/event/big-talks-2/"> Mihail Anton - "Metabolic Atlas: Genome-scale metabolic models for easy browsing and analysis"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
-			&emsp; - 10/08/2021: <a href="https://www.scilifelab.se/event/big-talks-3/"> Lars Juhl Jensen - "Network-based integration and visualization of large-scale data"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
+		<p>- 24/09/2021 - Our work in the analysis of transcriptomic data of Alzheimer's and Parkinson's disease highlighting age-related alterations is now published <a href="https://www.mdpi.com/2227-9059/9/10/1310">in Biomedicines</a>.</p>
+		<p>- 10/09/2021 - I hosted three open seminars in systems biology broadcasted online. <br>
+			&emsp; - 06/09/2021: <a href="https://www.scilifelab.se/event/big-talks-1/"> Pedro Beltrao - "BiG Talks – Network based analysis of 1002 GWAS study defines a pleiotropy map of human cell biology"</a> (<a href="https://www.youtube.com/watch?v=9eBCRWVLQTA">youtube</a>); <br>
+			&emsp; - 10/09/2021: <a href="https://www.scilifelab.se/event/big-talks-2/"> Mihail Anton - "Metabolic Atlas: Genome-scale metabolic models for easy browsing and analysis"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
+			&emsp; - 10/09/2021: <a href="https://www.scilifelab.se/event/big-talks-3/"> Lars Juhl Jensen - "Network-based integration and visualization of large-scale data"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
 		</p>
 		<p>- 06/08/2021 - I organized and taught at the <a href="https://uppsala.instructure.com/courses/52162">Elixir-Sweden Omcs Integration and Systems Biology course</a>.</p>
 		<p>- 22/07/2021 - I organized and taught a short tutorial in omics integration and systems biology at the <a href="https://nbisweden.github.io/workshop_omicsint_ISMBECCB/"> ISMB / ECCB 2021</a>.</p>
 		<p>- 11/05/2021 - Our work in CVD that was previously in <a href="https://www.biorxiv.org/content/10.1101/2020.10.28.358556v2">biorxiv</a> is now <a href="https://elifesciences.org/articles/66921">published in eLife</a>. See also the <a href="https://elifesciences.org/articles/69863">highlight</a>.</p>
-		<p>- 04/05/2021 - We studied the lipidomic and metabolomic relationships displayed by HIV patients undergoing long-term retroviral treatment in <a href="https://www.medrxiv.org/content/10.1101/2021.05.04.21256640v1">a new preprint.</a> </p>
 	</tr>
 <tr style="height: 18px;" >
 	<details><summary>&#9658; Past news (click to expand):</summary>
+		<p>- 04/05/2021 - We studied the lipidomic and metabolomic relationships displayed by HIV patients undergoing long-term retroviral treatment in <a href="https://www.medrxiv.org/content/10.1101/2021.05.04.21256640v1">a new preprint.</a> </p>
 		<p>- 30/04/2021 - New <a href="https://www.medrxiv.org/content/10.1101/2021.04.01.21254778v1">pre-print out</a> for our work in metabolomic characterization in HIV of the COCOMO cohort.</p>
 		<p>- 02/03/2021 - New <a href="https://www.biorxiv.org/content/10.1101/2021.02.24.432759v1.full">pre-print out</a> for our work in characterizing disrupted metabolism in host cells infected with SARS-CoV-2.</p>
 	</details>
