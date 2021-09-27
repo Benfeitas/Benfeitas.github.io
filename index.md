@@ -44,7 +44,7 @@ title: Rui Benfeitas
 			&emsp; - 10/09/2021: <a href="https://www.scilifelab.se/event/big-talks-2/"> Mihail Anton - "Metabolic Atlas: Genome-scale metabolic models for easy browsing and analysis"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
 			&emsp; - 10/09/2021: <a href="https://www.scilifelab.se/event/big-talks-3/"> Lars Juhl Jensen - "Network-based integration and visualization of large-scale data"</a> (<a href="https://www.youtube.com/watch?v=HJQGvmyko8I">youtube</a>); <br>
 		</p>
-		<p>- 06/08/2021 - I organized and taught at the <a href="https://uppsala.instructure.com/courses/52162">Elixir-Sweden Omcs Integration and Systems Biology course</a>.</p>
+		<p>- 06/08/2021 - I organized and taught at the <a href="https://uppsala.instructure.com/courses/52162">Elixir-Sweden Omics Integration and Systems Biology course</a>.</p>
 		<p>- 22/07/2021 - I organized and taught a short tutorial in omics integration and systems biology at the <a href="https://nbisweden.github.io/workshop_omicsint_ISMBECCB/"> ISMB / ECCB 2021</a>.</p>
 		<p>- 11/05/2021 - Our work in CVD that was previously in <a href="https://www.biorxiv.org/content/10.1101/2020.10.28.358556v2">biorxiv</a> is now <a href="https://elifesciences.org/articles/66921">published in eLife</a>. See also the <a href="https://elifesciences.org/articles/69863">highlight</a>.</p>
 	</tr>
