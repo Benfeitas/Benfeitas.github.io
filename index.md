@@ -38,6 +38,10 @@ title: Rui Benfeitas
 <!-- NEWS -->
 <tr style="height: 18px;" >
 <br><p><strong>News:</strong></p>
+	<p>- 28/02/2022 - Several papers out in the last few months: <br>
+			&emsp; - Metabolomic analysis of HIV individuals with metabolic syndrome [doi: https://doi.org/10.18632/aging.203622](https://doi.org/10.18632/aging.203622);
+			&emsp; - Lipidomic analysis of HIV individuals with metabolic syndrome [doi: https://dx.doi.org/10.3389%2Ffimmu.2021.742736](https://dx.doi.org/10.3389%2Ffimmu.2021.742736);
+			&emsp; - Metabolic reprograming in treated HIV subjects [doi: https://doi.org/10.1038/s42003-021-02985-3](https://doi.org/10.1038/s42003-021-02985-3)
         <p>- 03/12/2021 - Our meta-analysis of labeled and unlabeled Alzheimer's disease is now published at <a href="https://www.nature.com/articles/s41597-021-01090-8">Scientific Data</a>. </p>
 		<p>- 28/09/2021 - Our study of the proteomic behavior of SARS-CoV-2 and its severity is now published at <a href="https://www.mcponline.org/article/S1535-9476(21)00131-6/fulltext">Mol. Cel. Proteomics</a>. See <a href="https://news.ki.se/new-biomarker-for-severe-covid-19"> the press release</a>. </p>
         <p>- 24/09/2021 - Our work in the analysis of transcriptomic data of Alzheimer's and Parkinson's disease highlighting age-related alterations is now published <a href="https://www.mdpi.com/2227-9059/9/10/1310">in Biomedicines</a>.</p>
