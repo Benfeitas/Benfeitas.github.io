@@ -15,10 +15,6 @@ title: Rui Benfeitas
 		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
 		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="30"></a>
 		<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="30"></a>
-		<br>
-		<a href="https://www.nbis.se/about/staff/rui-benfeitas/"><img alt="NBIS" src="./includes/assets/img/logo/nbislogo-green.svg" style="height:30px;padding:0px 0px 0px 5px" ></a>
-		<a href="www.scilifelab.se"><img alt="Scilifelab" src="./includes/assets/img/logo/scilifelab.png" style="height:30px;padding:0px 0px 0px 5px" ></a>
-		<a href="https://www.dbb.su.se/"><img alt="Stockholm University" src="./includes/assets/img/logo/su.png" style="height:30px;padding:0px 0px 0px 5px" ></a>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
 </tr>
@@ -30,9 +26,9 @@ title: Rui Benfeitas
 <tbody>
 <tr style="height: 18px;" class="tr.justify">
 	<p>My research focuses in employing systems biology, network analysis and machine learning techniques
-	for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine characterizations in cancer, metabolic and infectious diseases, by combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
-	<p>I am involved in bioinformatics training as course leader and Vice-coordinator for Training. I coordinate about 20 courses per year, for national and international bioinformatic events driven by <a href='nbsi.se'>NBIS</a>. I am also leader for the course in <a href='https://uppsala.instructure.com/courses/52162'><img alt="Scilifelab" src="./includes/assets/img/net.png" style="height:15px" >Omics Integration and Systems Biology</a>, a course that we have taught several times in the past both <a href='https://uppsala.instructure.com/courses/52162'>nationally and internationally.</a> I regularly <a href="./pages/teaching.html">contribute to other courses</a> with ad-hoc lessons.</p>
-	<p>I contribute as Scientific Advisor to <a href="www.metabolicatlas.org"><img alt="Scilifelab" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a>, and am part of the <a href="https://elixir-europe.org/focus-groups/systems-biology"><img alt="elixir" src="./includes/assets/img/logo/elixir.png" style="height:15px" >Elixir Systems Biology Focus Group</a>.</p>
+	for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
+	<p>I am currently Translational & Precision Medicine lead at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a></p>
+	<p>I contribute as Scientific Advisor to <a href="www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
 </tr>
 
 <!-- NEWS -->
