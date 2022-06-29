@@ -8,7 +8,6 @@ title: Rui Benfeitas
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
 		<h3>Multi-omics Integration and Systems Biology</h3>
-		<p>Senior bioinformatician & Vice Training Coordinator</p><br>
 		<a href="http://twitter.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" height="30"></a>
 		<a href="https://scholar.google.se/citations?user=TNHVVA4AAAAJ"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
 		<a href="https://github.com/Benfeitas?tab=repositories"><img border="0" src="https://www.svgrepo.com/show/343674/github.svg" height="30"></a>
@@ -27,8 +26,7 @@ title: Rui Benfeitas
 <tr style="height: 18px;" class="tr.justify">
 	<p>My research focuses in employing systems biology, network analysis and machine learning techniques
 	for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
-	<p>I am currently Translational & Precision Medicine lead at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a></p>
-	<p>I contribute as Scientific Advisor to <a href="www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
+	<p>I am currently Translational & Precision Medicine lead at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a> and Scientific Advisor to <a href="www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
 </tr>
 
 <!-- NEWS -->
