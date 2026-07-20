@@ -36,6 +36,7 @@ title: Rui Benfeitas
 	<p><strong>News:</strong></p>
 	<p>- 2025 - I presented "Seralutinib targets fibrotic pathways in IPF: evidence from single-cell transcriptomics" (oral presentation, Abstract OA1201) at the <a href="https://www.ersnet.org/">ERS Congress 2025</a>.</p>
 		<p>- 2025 - Our study of the host plasma microenvironment in immunometabolically impaired HIV infection is now published at <a href="https://doi.org/10.1002/advs.202416453">Advanced Science</a>.</p>
+		<p>- 09/09/2023 - I presented "An endothelial cell subtype is linked with altered Rho-kinase (ROCK)-associated pathways in PAH" (oral communication) at the <a href="https://www.semanticscholar.org/paper/An-endothelial-cell-subtype-is-linked-with-altered-Benfeitas-Facchinetti/4d7ae9dba51a620586c30a2e85ccc224483b2e24">ERS Congress 2023</a>.</p>
 		<p>- 2023 - Our network-based multi-omics integration revealing a metabolic at-risk profile within treated HIV-infection is now published at <a href="https://doi.org/10.7554/eLife.82785">eLife</a>.</p>
 		<p>- 2022 - Our multi-omics personalized network analyses of central metabolism disruption associated with COVID-19 severity are now published at <a href="https://doi.org/10.1016/j.cels.2022.06.006">Cell Systems</a>.</p>
 		<p>- 2022 - Our multi-omics study of host-viral response and pathogenesis in Crimean-Congo hemorrhagic fever virus is now published at <a href="https://doi.org/10.7554/eLife.76071">eLife</a>.</p>
