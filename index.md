@@ -8,12 +8,12 @@ title: Rui Benfeitas
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
 		<h3>Multi-omics Integration and Systems Biology</h3>
-		<a href="http://twitter.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" height="30"></a>
-		<a href="https://scholar.google.se/citations?user=TNHVVA4AAAAJ"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
+		<a href="https://x.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" height="30"></a>
+		<a href="https://scholar.google.com/citations?user=TNHVVA4AAAAJ&hl=es"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
 		<a href="https://github.com/Benfeitas?tab=repositories"><img border="0" src="https://www.svgrepo.com/show/343674/github.svg" height="30"></a>
 		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
 		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="30"></a>
-		<a href="https://publons.com/researcher/1294591/rui-benfeitas/"><img border="0" src="https://icons-for-free.com/iconfiles/png/512/publons-1324440218351315351.png" height="30"></a>
+		<a href="https://orcid.org/0000-0001-7972-0083"><img border="0" src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" height="30"></a>
 	</td>
 	<td style="width: 30%; height: 18px;"><img src="./includes/assets/img/photo.png" style="float: right" width="100%" alt="" /></td>
 </tr>
@@ -26,12 +26,17 @@ title: Rui Benfeitas
 <tr style="height: 18px;" class="tr.justify">
 	<p>My research focuses in employing systems biology, network analysis and machine learning techniques
 	for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
-	<p>I am currently Translational & Precision Medicine lead at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a> and Scientific Advisor to <a href="www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
+	<p>I am currently Head of Translational & Precision Medicine at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a>, working in respiratory disease with a focus on pulmonary hypertension and bronchiectasis. I am also Scientific Advisor to <a href="https://www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
 </tr>
 
 <!-- NEWS -->
 <tr style="height: 18px;" >
 <br><p><strong>News:</strong></p>
+	<p>- 2025 - I presented "Seralutinib targets fibrotic pathways in IPF: evidence from single-cell transcriptomics" (oral presentation, Abstract OA1201) at the <a href="https://www.ersnet.org/">ERS Congress 2025</a>.</p>
+	<p>- 2025 - Our study of the host plasma microenvironment in immunometabolically impaired HIV infection is now published at <a href="https://doi.org/10.1002/advs.202416453">Advanced Science</a>.</p>
+	<p>- 2023 - Our network-based multi-omics integration revealing a metabolic at-risk profile within treated HIV-infection is now published at <a href="https://doi.org/10.7554/eLife.82785">eLife</a>.</p>
+	<p>- 2022 - Our multi-omics personalized network analyses of central metabolism disruption associated with COVID-19 severity are now published at <a href="https://doi.org/10.1016/j.cels.2022.06.006">Cell Systems</a>.</p>
+	<p>- 2022 - Our multi-omics study of host-viral response and pathogenesis in Crimean-Congo hemorrhagic fever virus is now published at <a href="https://doi.org/10.7554/eLife.76071">eLife</a>.</p>
 	<p>- 28/02/2022 - Several papers out in the last few months: <br>
 			&emsp; - Metabolomic analysis of HIV individuals with metabolic syndrome in <a href="https://doi.org/10.18632/aging.203622">Aging </a><br>
 			&emsp; - Lipidomic analysis of HIV individuals with metabolic syndrome in <a href="https://dx.doi.org/10.3389%2Ffimmu.2021.742736">Frontiers in Immunology</a><br>
