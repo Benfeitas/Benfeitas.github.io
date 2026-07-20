@@ -13,7 +13,7 @@ title: about
 <td style="width: 10%;">
 	<strong>2022 – current</strong></td>
 <td style="width: 80%;">
-	<p> Translational & Precision Medicine Lead</p>
+	<p>Head of Translational &amp; Precision Medicine</p>
 	<p><a href="https://www.chiesi.com/en/home/">Chiesi Pharma</a></p>
 </td>
 </tr>
@@ -32,9 +32,9 @@ title: about
 <td style="width: 10%;">
 	<strong>2019 – 2022</strong></td>
 <td style="width: 80%;">
-	<p> Senior Bioinformatician & Vice Training Coordinator</p>
-	<p><a href="https://www.nbis.se/about/staff/rui-benfeitas/">National Bioinformatics Infrastructure Sweden (NBIS)</a></p>
-	<p><a href="www.scilifelab.se">SciLifeLab</a> | <a href="https://www.dbb.su.se/">DBB Stockholm University]</a></p></td>
+	<p> Senior Bioinformatician &amp; Vice Training Coordinator</p>
+	<p><a href="https://nbis.se/">National Bioinformatics Infrastructure Sweden (NBIS)</a></p>
+	<p><a href="https://www.scilifelab.se">SciLifeLab</a> | <a href="https://www.dbb.su.se/">DBB Stockholm University</a></p></td>
 </tr>
 
 <tr style="height: 100px;">
@@ -44,8 +44,8 @@ title: about
 	<strong>2016 – 2018</strong></td>
 <td style="width: 80%;">
 	<p>Postdoctoral researcher</p>  
-	<p><a href="https://www.proteinatlas.org/">Human Protein Atlas</a> | <a href="sysmedicine.com">Sysmedicine</a></p>
-	<p><a href="www.scilifelab.se">SciLifeLab</a> | <a href="kth.se">KTH – Royal Institute of Technology</a></p></td>
+	<p><a href="https://www.proteinatlas.org/">Human Protein Atlas</a> | <a href="https://sysmedicine.com">Sysmedicine</a></p>
+	<p><a href="https://www.scilifelab.se">SciLifeLab</a> | <a href="https://www.kth.se">KTH – Royal Institute of Technology</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,4 +102,4 @@ title: about
 
 ## Contact
 
-rui.benfeitas [at] scilifelab.se
+Reach me on [LinkedIn](https://www.linkedin.com/in/ruibenfeitas/).
