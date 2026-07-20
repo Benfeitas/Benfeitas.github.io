@@ -1,14 +1,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <meta name="theme-color" content="#ffffff">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <!-- SEO: title, description, canonical, Open Graph & Twitter tags (jekyll-seo-tag) -->
+  {% seo %}
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- Social share image + Twitter card -->
+  <meta property="og:image" content="{{ '/includes/assets/img/photo.png' | prepend: site.url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ '/includes/assets/img/photo.png' | prepend: site.url }}">
+
+  <!-- Favicon (reuses existing photo; swap for a dedicated square favicon.png if you make one) -->
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/includes/assets/img/photo.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/includes/assets/img/photo.png">
   <!-- CSS  -->
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -19,14 +26,14 @@
 
     <link href="{{site.baseurl}}/includes/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190245245-1"></script>
+  <!-- Google tag (gtag.js) - GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2536EN73GJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-190245245-1');
+    gtag('config', 'G-2536EN73GJ');
   </script>
 
 </head>
