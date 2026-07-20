@@ -1,6 +1,11 @@
 title: "Rui Benfeitas"
+description: "Rui Benfeitas — translational research, precision medicine, and systems biology."
+author: "Rui Benfeitas"
+url: "https://benfeitas.net"
+baseurl: ""
+lang: en
+encoding: utf-8
 
-# where things are
 # where things are
 layouts_dir: ./includes/layouts
 includes_dir: ./includes/includes
@@ -9,14 +14,23 @@ sass:
 
 plugins:
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - LICENSE
 
 defaults:
-  - values:
+  - scope:
+      path: ""
+    values:
       logosnav: true
 
 menu:
   - title: Home
-    url:
+    url: "/"
   - title: Teaching
     url: pages/teaching
   - title: Publications
