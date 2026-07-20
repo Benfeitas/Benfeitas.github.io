@@ -3,7 +3,7 @@ layout: page
 title: "teaching"
 ---
 
-I was strongly involved in bioinformatics teaching and coordination as Vice Training coordinator for national bioinformatics training at [NBIS / ELIXIR-Sweden](www.nbis.se), where I coordinated about 20 different teaching events per year.  
+I was involved in bioinformatics teaching and coordination as Vice Training coordinator for national bioinformatics training at [NBIS / ELIXIR-Sweden](www.nbis.se), where I coordinated about 20 different teaching events per year.  
   
 I was also course leader for [Omics Integration and Systems Biology][1], a course offered nationally and internationally for PhD+ level researchers by NBIS/ELIXIR-Sweden. 
 
