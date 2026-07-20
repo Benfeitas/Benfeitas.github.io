@@ -7,8 +7,7 @@ title: Rui Benfeitas
 <tbody>
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
-		<h3>Multi-omics Integration and Systems Biology</h3>
-		<a href="https://x.com/ruifeitas"><img border="0" src="https://www.svgrepo.com/show/137277/twitter.svg" height="30"></a>
+		<h3>Translational Research, Precision Medicine, and Systems Biology</h3>
 		<a href="https://scholar.google.com/citations?user=TNHVVA4AAAAJ&hl=es"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
 		<a href="https://github.com/Benfeitas?tab=repositories"><img border="0" src="https://www.svgrepo.com/show/343674/github.svg" height="30"></a>
 		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
@@ -24,9 +23,9 @@ title: Rui Benfeitas
 <table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
 <tbody>
 <tr style="height: 18px;" class="tr.justify">
-	<p>My research focuses in employing systems biology, network analysis and machine learning techniques
-	for integration of high throughput data for disease characterization, patient stratification, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
-	<p>I am currently Head of Translational & Precision Medicine at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a>, working in respiratory disease with a focus on pulmonary hypertension and bronchiectasis. I am also Scientific Advisor to <a href="https://www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
+	<p>I develop biomarker strategies for translational medicine and patient stratification, from early to late phase clinical research. My research focuses in employing systems medicine, network analysis and machine learning techniques
+	for integration of high throughput data for disease characterization, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
+	<p>I am currently Head of Translational & Precision Medicine at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a>, working in respiratory disease with focus on chronic respiratory diseases such as interstitial lung disease, pulmonary hypertension, chronic obstructive pulmonary disease and bronchiectasis. I am also Scientific Advisor to <a href="https://www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
 </tr>
 
 <!-- NEWS -->
