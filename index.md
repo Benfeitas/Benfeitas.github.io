@@ -8,7 +8,7 @@ title: Rui Benfeitas
 <tr style="height: 18px;">
 	<td style="width: 70%; height: 18px;"><h1>Rui Benfeitas, PhD </h1>
 		<h3>Translational Research, Precision Medicine, and Systems Biology</h3>
-		<a href="https://scholar.google.com/citations?user=TNHVVA4AAAAJ&hl=es"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
+		<a href="https://scholar.google.com/citations?user=TNHVVA4AAAAJ"><img border="0" src="https://camo.githubusercontent.com/80c1726d97a306a48189cb105cb4c0667d5adf140dc35daf05713873170b20ff/687474703a2f2f7777772e736f66746c61622e6e7475612e67722f7e6e69636b69652f696d616765732f6c6f676f2f676f6f676c652d7363686f6c61722e706e67" height="30"></a>
 		<a href="https://github.com/Benfeitas?tab=repositories"><img border="0" src="https://www.svgrepo.com/show/343674/github.svg" height="30"></a>
 		<a href="https://www.linkedin.com/in/ruibenfeitas/"><img border="0" src="https://www.svgrepo.com/show/315300/linkedin.svg" height="30"></a>
 		<a href="https://www.researchgate.net/profile/Rui-Benfeitas"><img border="0" src="https://logoeps.com/wp-content/uploads/2014/09/49394-researchgate-logo-icon-vector-icon-vector-eps.png" height="30"></a>
