@@ -18,6 +18,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 
 exclude:
   - README.md
@@ -35,7 +36,7 @@ menu:
   - title: Teaching
     url: pages/teaching
   - title: Publications
-    url: pages/publications_backup
+    url: pages/publications
   - title: Resources
     url: pages/resources
   - title: About
