@@ -1,6 +1,10 @@
 ---
 layout: page
 title: "publications"
+redirect_from:
+  - /pages/publications_backup
+  - /pages/publications_backup.html
+  - /pages/publications_backup/
 ---
 
 <style>
