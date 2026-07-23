@@ -26,16 +26,19 @@ title: Rui Benfeitas
 	<td style="text-align: justify;">
 	<p>I develop biomarker strategies for translational medicine and patient stratification, from early to late phase clinical research. My research focuses in employing systems medicine, network analysis and machine learning techniques
 	for integration of high throughput data for disease characterization, connecting risk factors with molecular features, and computational prediction of therapeutic targets. I develop new algorithms for subgroup identification and personalized medicine disease characterizations combining transcriptomic, proteomic, metabolomic, and epigenomic data.</p>
-	<p>I am currently Head of Translational &amp; Precision Medicine at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a>, working in respiratory disease with focus on chronic respiratory diseases such as interstitial lung disease, pulmonary hypertension, chronic obstructive pulmonary disease and bronchiectasis. I am also Scientific Advisor to <a href="https://www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
+	<p>I am currently Head of Translational &amp; Precision Medicine at <a href='https://www.chiesi.com/en/home/'>Chiesi Pharma</a>, working in chronic respiratory diseases such as interstitial lung disease, pulmonary hypertension, chronic obstructive pulmonary disease and bronchiectasis. I am also Scientific Advisor to <a href="https://www.metabolicatlas.org"><img alt="met atlas" src="./includes/assets/img/logo/metatlas.png" style="height:15px" >Metabolic Atlas</a></p>
 	</td>
 </tr>
 
 <!-- NEWS -->
 <tr style="height: 18px;" >
 	<td>
+	<p>For my latest publications on different themes, see the <a href="/pages/publications">publications page</a>.</p>
 	<p><strong>News:</strong></p>
+	<p>- 22/07/26 - The <a href="/pages/publications">publications page</a> has been reorganized by research theme and updated with new papers through 2025.</p>
 	<p>- 28/09/25 - I presented "Seralutinib targets fibrotic pathways in IPF: evidence from single-cell transcriptomics" (oral presentation, Abstract OA1201) at the <a href="https://www.ersnet.org/">ERS Congress 2025</a>.</p>
 		<p>- 27/02/25 - Our study of the host plasma microenvironment in immunometabolically impaired HIV infection is now published at <a href="https://doi.org/10.1002/advs.202416453">Advanced Science</a>.</p>
+		<p>- 19/10/24 - Our study showing that the phosphoinositide 3-kinase delta isoform is not a suitable target for the management of COPD is now published at <a href="https://doi.org/10.1186/s12931-024-02999-5">Respiratory Research</a>.</p>
 		<p>- 09/09/23 - I presented "An endothelial cell subtype is linked with altered Rho-kinase (ROCK)-associated pathways in PAH" (oral communication) at the <a href="https://www.semanticscholar.org/paper/An-endothelial-cell-subtype-is-linked-with-altered-Benfeitas-Facchinetti/4d7ae9dba51a620586c30a2e85ccc224483b2e24">ERS Congress 2023</a>.</p>
 		<p>- 16/02/23 - Our network-based multi-omics integration revealing a metabolic at-risk profile within treated HIV-infection is now published at <a href="https://doi.org/10.7554/eLife.82785">eLife</a>.</p>
 		<p>- 07/07/22 - Our multi-omics personalized network analyses of central metabolism disruption associated with COVID-19 severity are now published at <a href="https://doi.org/10.1016/j.cels.2022.06.006">Cell Systems</a>.</p>
