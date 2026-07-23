@@ -5,7 +5,7 @@ title: "publications — full list"
 
 Last update: 22/07/2026
 
-Complete chronological list of publications, newest first. For a view organised by research theme, see the [main publications page](/pages/publications). Items are numbered within each group; *(preprint)* and *(conference presentation)* are labelled as such.
+Complete chronological list of publications, newest first. For a view organised by research theme, see the [main publications page](/pages/publications).
 
 ## Journal articles
 38. F. Mikaeloff, M. Gelpi, A. Escós, T. Wang, S. Gupta, A. Olofsson, S. Svensson Akusjärvi, S. Schuster, P. Naval, V. Sood, N. Nikouyan, A. D. Knudsen, B. Vestad, J. Høgh, J. R. Hov, T. Benfield, M. Trøseid, V. Pawar, M. Rucevic, **R. Benfeitas**, Á. Végvári, L. O'Mahony, R. Savai, N. K. Björkström, M. Lourda, J. P. de Magalhães, S. Weiss, A. Mardinoglu, M. K. Varshney, A. C. Karlsson, Y. A. Syed, S. D. Nielsen, U. Neogi. 2025. "Host Plasma Microenvironment in Immunometabolically Impaired HIV Infection Leads to Dysregulated Monocyte Function and Synaptic Transmission Ex Vivo." Advanced Science 12(16):2416453. [doi:10.1002/advs.202416453](https://doi.org/10.1002/advs.202416453)
