@@ -32,7 +32,7 @@ defaults:
 
 menu:
   - title: Home
-    url: "/"
+    url: ""
   - title: Teaching
     url: pages/teaching
   - title: Publications
