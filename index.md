@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Rui Benfeitas
+logosnav: true
 ---
 
 <table class="center" style="width: 100%; border-collapse: collapse; border-style: hidden; height: 36px;" border="1">
