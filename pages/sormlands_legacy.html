@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training Plan — Nyköping 50 km</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#1e3329;
+    --moss:#44634f;
+    --marker:#e8722b;       /* trail-marker orange */
+    --marker-soft:#fdf1e8;
+    --green-soft:#eef3ee;
+    --paper:#fafaf6;
+    --ink:#22281f;
+    --line:#dfe3da;
+    --muted:#6b7466;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Barlow',sans-serif;
+    font-size:15px;
+    line-height:1.45;
+    padding:32px 20px 48px;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+
+  /* ---------- header ---------- */
+  header{border-bottom:3px solid var(--pine);padding-bottom:20px;margin-bottom:20px}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--marker);margin-bottom:6px;
+  }
+  h1{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;
+    font-size:clamp(34px,5vw,54px);line-height:1;letter-spacing:.01em;
+    text-transform:uppercase;color:var(--pine);
+  }
+  .sub{margin-top:10px;font-size:16px;color:var(--muted);max-width:70ch}
+  .sub strong{color:var(--ink);font-weight:600}
+  .byline{margin-top:10px;font-size:13.5px;color:var(--muted)}
+  .byline b{color:var(--pine);font-weight:600}
+  .byline a{color:var(--marker);text-decoration:none;font-weight:500}
+  .byline a:hover{text-decoration:underline}
+
+  /* ---------- goal chips ---------- */
+  .goals{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+  .goals span{
+    font-size:13.5px;font-weight:500;color:var(--pine);
+    background:var(--green-soft);border:1px solid var(--line);
+    border-radius:999px;padding:5px 13px;
+  }
+
+  /* ---------- table ---------- */
+  .scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+  table{border-collapse:collapse;width:100%;min-width:1050px}
+  th,td{border:1px solid var(--line);padding:12px 14px;vertical-align:top;text-align:left}
+
+  thead th{
+    background:var(--pine);color:#fff;border-color:#31493c;
+    font-family:'Barlow Condensed',sans-serif;font-weight:600;
+    font-size:17px;letter-spacing:.05em;text-transform:uppercase;
+    padding:12px 14px 10px;
+  }
+  thead .day{display:block}
+  thead .tag{
+    display:block;font-family:'Barlow',sans-serif;font-size:11.5px;font-weight:500;
+    letter-spacing:.04em;text-transform:none;color:#c9d6cc;margin-top:2px;
+  }
+  thead th.hill{background:var(--marker);border-color:#c95f1f}
+  thead th.hill .tag{color:#ffe3cc}
+  thead th.hill .protocol{
+    display:block;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.35);
+    font-family:'Barlow',sans-serif;font-size:12px;font-weight:400;line-height:1.45;
+    text-transform:none;letter-spacing:0;color:#fff;
+  }
+
+  .wk{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;
+    color:var(--pine);background:var(--green-soft);text-align:center;width:64px;
+    vertical-align:middle;
+  }
+
+  /* repeated-day cells */
+  td.same{background:#fcfcf9;font-size:14px;vertical-align:top}
+  td.same .cellhead{
+    font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;
+    letter-spacing:.04em;text-transform:uppercase;color:var(--pine);margin-bottom:6px;
+  }
+  td.rest{color:var(--muted)}
+
+  /* strength cell */
+  td.strength{min-width:300px}
+  .ex{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;align-items:center;gap:10px}
+  .ex .txt{flex:1;min-width:0}
+  .ex svg{flex:0 0 64px;width:64px;height:52px;background:var(--green-soft);border-radius:8px}
+  .ex:last-of-type{border-bottom:none}
+  .ex b{font-weight:600;display:block}
+  .ex .dose{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;color:var(--marker);
+  }
+  .ex small{display:block;color:var(--muted);font-size:12.5px;line-height:1.4;margin-top:1px}
+  .finisher{
+    margin-top:10px;background:var(--green-soft);border-radius:6px;padding:8px 10px;
+    font-size:12.5px;color:var(--pine);display:flex;align-items:center;gap:10px;
+  }
+  .finisher svg{flex:0 0 64px;width:64px;height:52px;background:#fff;border-radius:8px}
+  .finisher b{text-transform:uppercase;font-size:11px;letter-spacing:.08em}
+
+  /* hill cells */
+  td.hillcell{background:var(--marker-soft);vertical-align:middle;min-width:130px}
+  td.hillcell .workout{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:#b2530f;
+  }
+  td.hillcell small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+
+  /* long run cells */
+  td.longrun{vertical-align:middle;min-width:180px}
+  .km{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:var(--pine)}
+  .bar{height:8px;border-radius:4px;background:var(--green-soft);margin-top:6px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:4px;background:var(--moss)}
+  .phase{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:5px;display:block}
+  .date{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--muted);display:block;margin-top:3px}
+  td.longrun .date{display:inline;margin-left:6px;vertical-align:1px}
+
+  /* session checkboxes */
+  .row{display:flex;align-items:center;gap:10px}
+  .cellbody{flex:1;min-width:0}
+  .chk{flex:0 0 auto;display:inline-flex;cursor:pointer;position:relative}
+  .chk input{position:absolute;opacity:0;width:100%;height:100%;cursor:pointer;margin:0}
+  .chk .box{
+    width:21px;height:21px;border:2px solid var(--moss);border-radius:6px;background:#fff;
+    display:inline-flex;align-items:center;justify-content:center;
+    font-size:14px;font-weight:700;color:#fff;transition:background .15s,border-color .15s;
+  }
+  .chk input:checked + .box{background:var(--moss);border-color:var(--moss)}
+  .chk input:checked + .box::after{content:"✓"}
+  td.hillcell .chk .box{border-color:var(--marker)}
+  td.hillcell .chk input:checked + .box{background:var(--marker);border-color:var(--marker)}
+  td.done .cellbody > *:not(.kmrow){opacity:.55}
+  tr.key td.longrun{background:#fff8e8;box-shadow:inset 3px 0 0 var(--marker)}
+  .keyflag{
+    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;
+    letter-spacing:.08em;color:#fff;background:var(--marker);border-radius:4px;
+    padding:2px 7px;margin-left:8px;vertical-align:2px;
+  }
+  .keynote{font-size:12px;color:#8a5a17;margin-top:6px;line-height:1.4}
+
+  /* per-week day cells */
+  td.daycell{background:#fcfcf9;font-size:13px;vertical-align:middle;min-width:112px}
+  td.daycell .dayname{display:block;font-family:'Barlow Condensed',sans-serif;font-size:15.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--pine)}
+  td.daycell small{display:block;color:var(--muted);font-size:11.5px;line-height:1.35}
+
+  /* strength card below table */
+  .strengthcard{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;max-width:580px}
+  .strengthcard h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--pine);margin-bottom:8px}
+  .cardmeta{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;color:var(--moss);margin:-2px 0 14px}
+  .cardnote{margin-top:12px;font-size:12.5px;color:var(--muted);font-style:italic}
+  .exfig{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .wt{display:flex;align-items:center;gap:3px}
+  .wt-in{width:42px;padding:2px 5px;border:1.5px solid var(--line);border-radius:5px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:center;color:var(--pine);background:#fff}
+  .wt-in:focus{outline:none;border-color:var(--moss)}
+  .wt span{font-size:10.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace}
+
+  /* km inputs */
+  .kmrow{display:flex;align-items:center;gap:5px;margin-top:6px}
+  .km-in{width:50px;padding:3px 6px;border:1.5px solid var(--line);border-radius:5px;
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--pine);background:#fff}
+  .km-in:disabled{background:#f2f2ec;color:#b3b8ad;border-style:dashed;cursor:not-allowed}
+  .km-in:focus{outline:none;border-color:var(--moss)}
+  td.hillcell .km-in:focus{border-color:var(--marker)}
+  .kmrow .plan{font-size:11px;color:var(--muted);font-family:'IBM Plex Mono',monospace;white-space:nowrap}
+
+  /* progress bar */
+  .progress{margin:0 0 20px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+  .progress-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:10px;flex-wrap:wrap}
+  .progress-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:600;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--pine)}
+  .progress-num{font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:var(--moss)}
+  .progress-track{height:14px;background:var(--green-soft);border-radius:7px;overflow:hidden}
+  .progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--moss),var(--pine));
+    border-radius:7px;transition:width .3s ease}
+  .progress-note{font-size:11.5px;color:var(--muted);margin-top:7px}
+
+  /* footer */
+  footer{margin-top:18px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  footer b{color:var(--pine);font-weight:600}
+
+  @media (max-width:640px){ body{padding:22px 12px 40px} }
+  @media print{ .scroll{overflow:visible;border:none} body{padding:0} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Phase 1 · Trail preparation · 12 July – 12 September 2026</div>
+    <h1>Training Plan for Rui — Nyköping 50 km</h1>
+    <p class="sub">Eight weeks, six sessions per week, building to race day on <strong>12 September</strong>.
+    Running coaching with a long-term focus on the <strong>Stockholm Marathon, 30 May 2027</strong>.</p>
+    <p class="byline">Plan by <b>Elisabet Pärsdotter Westman</b> · plusPT · <a href="https://www.pluspt.se">www.pluspt.se</a> · info@pluspt.se</p>
+  </header>
+
+  <div class="goals">
+    <span>Get the body used to uneven terrain</span>
+    <span>Improve balance and foot/ankle stability</span>
+    <span>Strengthen hip flexors, glutes and core</span>
+    <span>Build endurance for 50 km</span>
+    <span>Maintain aerobic capacity via hill intervals</span>
+  </div>
+
+  <section class="progress">
+    <div class="progress-head">
+      <span class="progress-title">Kilometres completed</span>
+      <span class="progress-num" id="progText">0 / 417 km</span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    <div class="progress-note">Sums the km you enter for checked sessions, against ~417 km planned for the block
+    (easy days counted as 9 km, hill sessions as ~8 km incl. warm-up and cool-down).</div>
+  </section>
+
+  <div class="scroll">
+  <table>
+    <thead>
+      <tr>
+        <th class="wkhead">Week</th>
+        <th><span class="day">Monday</span><span class="tag">Strength · full session below ↓</span></th>
+        <th><span class="day">Tuesday</span><span class="tag">Easy</span></th>
+        <th class="hill">
+          <span class="day">Wednesday</span><span class="tag">Hill intervals · Quality</span>
+          <span class="protocol">Intensity ≈ 85–90 % of max HR. Jog gently back downhill as recovery.
+          Purpose: running strength, hip drive and aerobic capacity.</span>
+        </th>
+        <th><span class="day">Thursday</span><span class="tag">Easy</span></th>
+        <th><span class="day">Friday</span><span class="tag">Strength · Friday session ↓</span></th>
+        <th><span class="day">Sat / Sun</span><span class="tag">Long trail run · Distance</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="wk">1</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w1mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 13 Jul</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w1tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 14 Jul</span><div class="kmrow"><input class="km-in" id="km-w1tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w1wed"><span class="box"></span></label><div class="cellbody"><span class="workout">8 × 60 s</span><small>uphill</small><span class="date">Wed 15 Jul</span><div class="kmrow"><input class="km-in" id="km-w1wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w1thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 16 Jul</span><div class="kmrow"><input class="km-in" id="km-w1thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w1fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 17 Jul</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w1sat"><span class="box"></span></label><div class="cellbody"><span class="km">18 km</span><span class="date">Sat 18 Jul</span><div class="bar"><i style="width:47%"></i></div><span class="phase">Build</span><div class="kmrow"><input class="km-in" id="km-w1sat" data-planned="18" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 18 km</span></div></div></div></td>
+      </tr>
+      <tr>
+        <td class="wk">2</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w2mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 20 Jul</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w2tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 21 Jul</span><div class="kmrow"><input class="km-in" id="km-w2tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w2wed"><span class="box"></span></label><div class="cellbody"><span class="workout">10 × 60 s</span><small>uphill</small><span class="date">Wed 22 Jul</span><div class="kmrow"><input class="km-in" id="km-w2wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w2thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 23 Jul</span><div class="kmrow"><input class="km-in" id="km-w2thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w2fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 24 Jul</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w2sat"><span class="box"></span></label><div class="cellbody"><span class="km">22 km</span><span class="date">Sat 25 Jul</span><div class="bar"><i style="width:58%"></i></div><span class="phase">Build</span><div class="kmrow"><input class="km-in" id="km-w2sat" data-planned="22" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 22 km</span></div></div></div></td>
+      </tr>
+      <tr>
+        <td class="wk">3</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w3mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 27 Jul</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w3tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 28 Jul</span><div class="kmrow"><input class="km-in" id="km-w3tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w3wed"><span class="box"></span></label><div class="cellbody"><span class="workout">6 × 90 s</span><small>uphill</small><span class="date">Wed 29 Jul</span><div class="kmrow"><input class="km-in" id="km-w3wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w3thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 30 Jul</span><div class="kmrow"><input class="km-in" id="km-w3thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w3fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 31 Jul</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w3sat"><span class="box"></span></label><div class="cellbody"><span class="km">26 km</span><span class="date">Sat 1 Aug</span><div class="bar"><i style="width:68%"></i></div><span class="phase">Build</span><div class="kmrow"><input class="km-in" id="km-w3sat" data-planned="26" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 26 km</span></div></div></div></td>
+      </tr>
+      <tr>
+        <td class="wk">4</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w4mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 3 Aug</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w4tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 4 Aug</span><div class="kmrow"><input class="km-in" id="km-w4tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w4wed"><span class="box"></span></label><div class="cellbody"><span class="workout">8 × 90 s</span><small>uphill</small><span class="date">Wed 5 Aug</span><div class="kmrow"><input class="km-in" id="km-w4wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w4thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 6 Aug</span><div class="kmrow"><input class="km-in" id="km-w4thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w4fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 7 Aug</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w4sat"><span class="box"></span></label><div class="cellbody"><span class="km">30 km</span><span class="date">Sat 8 Aug</span><div class="bar"><i style="width:79%"></i></div><span class="phase">Build</span><div class="kmrow"><input class="km-in" id="km-w4sat" data-planned="30" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 30 km</span></div></div></div></td>
+      </tr>
+      <tr>
+        <td class="wk">5</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w5mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 10 Aug</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w5tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 11 Aug</span><div class="kmrow"><input class="km-in" id="km-w5tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w5wed"><span class="box"></span></label><div class="cellbody"><span class="workout">5 × 2 min</span><small>uphill</small><span class="date">Wed 12 Aug</span><div class="kmrow"><input class="km-in" id="km-w5wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w5thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 13 Aug</span><div class="kmrow"><input class="km-in" id="km-w5thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w5fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 14 Aug</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w5sat"><span class="box"></span></label><div class="cellbody"><span class="km">34 km</span><span class="date">Sat 15 Aug</span><div class="bar"><i style="width:89%"></i></div><span class="phase">Build</span><div class="kmrow"><input class="km-in" id="km-w5sat" data-planned="34" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 34 km</span></div></div></div></td>
+      </tr>
+      <tr class="key">
+        <td class="wk">6</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w6mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 17 Aug</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w6tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 18 Aug</span><div class="kmrow"><input class="km-in" id="km-w6tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w6wed"><span class="box"></span></label><div class="cellbody"><span class="workout">6 × 2 min</span><small>uphill</small><span class="date">Wed 19 Aug</span><div class="kmrow"><input class="km-in" id="km-w6wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w6thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 20 Aug</span><div class="kmrow"><input class="km-in" id="km-w6thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w6fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 21 Aug</span></div></div></td>
+        <td class="longrun">
+          <div class="row"><label class="chk"><input type="checkbox" id="w6sat"><span class="box"></span></label><div class="cellbody">
+          <span class="km">38 km</span><span class="date">Sat 22 Aug</span><span class="keyflag">KEY SESSION</span>
+          <div class="bar"><i style="width:100%;background:var(--marker)"></i></div>
+          <div class="keynote">Longest run of the block — nothing longer is needed before a first 50 km trail race.</div>
+          <div class="kmrow"><input class="km-in" id="km-w6sat" data-planned="38" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 38 km</span></div></div></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="wk">7</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w7mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 24 Aug</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w7tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 25 Aug</span><div class="kmrow"><input class="km-in" id="km-w7tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w7wed"><span class="box"></span></label><div class="cellbody"><span class="workout">4 × 3 min</span><small>uphill</small><span class="date">Wed 26 Aug</span><div class="kmrow"><input class="km-in" id="km-w7wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w7thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 27 Aug</span><div class="kmrow"><input class="km-in" id="km-w7thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w7fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 28 Aug</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w7sat"><span class="box"></span></label><div class="cellbody"><span class="km">24 km</span><span class="date">Sat 29 Aug</span><div class="bar"><i style="width:63%"></i></div><span class="phase">Absorb</span><div class="kmrow"><input class="km-in" id="km-w7sat" data-planned="24" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 24 km</span></div></div></div></td>
+      </tr>
+      <tr>
+        <td class="wk">8</td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w8mon"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>30–35 min · Monday session ↓</small><span class="date">Mon 31 Aug</span></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w8tue"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Tue 1 Sep</span><div class="kmrow"><input class="km-in" id="km-w8tue" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="hillcell"><div class="row"><label class="chk"><input type="checkbox" id="w8wed"><span class="box"></span></label><div class="cellbody"><span class="workout">6 × 60 s</span><small>uphill · easier effort</small><span class="date">Wed 2 Sep</span><div class="kmrow"><input class="km-in" id="km-w8wed" data-planned="8" inputmode="decimal" placeholder="km" disabled><span class="plan">/ ~8 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w8thu"><span class="box"></span></label><div class="cellbody"><span class="dayname">Easy trail</span><small>8–10 km, easy effort</small><span class="date">Thu 3 Sep</span><div class="kmrow"><input class="km-in" id="km-w8thu" data-planned="9" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 8–10 km</span></div></div></div></td>
+        <td class="daycell"><div class="row"><label class="chk"><input type="checkbox" id="w8fri"><span class="box"></span></label><div class="cellbody"><span class="dayname">Strength</span><small>Friday session ↓</small><span class="date">Fri 4 Sep</span></div></div></td>
+        <td class="longrun"><div class="row"><label class="chk"><input type="checkbox" id="w8sat"><span class="box"></span></label><div class="cellbody"><span class="km">15–18 km</span><span class="date">Sat 5 Sep</span><div class="bar"><i style="width:43%"></i></div><span class="phase">Taper · race Sat 12 Sep</span><div class="kmrow"><input class="km-in" id="km-w8sat" data-planned="17" inputmode="decimal" placeholder="km" disabled><span class="plan">/ 15–18 km</span></div></div></div></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <section class="strengthcard">
+    <h2>Monday strength session — 30–35 min, every week</h2>
+
+          <div class="ex">
+            <div class="txt"><b>1 · Bulgarian split squats <span class="dose">3 × 10 / leg</span></b>
+            <small>With a dumbbell or resistance band if possible.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Bulgarian split squat: lunge with rear foot on a bench">
+              <path d="M10 82 H112" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <rect x="76" y="56" width="34" height="9" rx="2" fill="#e8722b"/>
+              <path d="M82 65 V80 M104 65 V80" stroke="#1e3329" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="38" cy="16" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M40 27 L45 48"/><path d="M45 48 L28 58 L30 80 L20 80"/>
+                <path d="M45 48 L66 58 L84 54"/><path d="M41 32 L50 45"/>
+              </g>
+            </svg><div class="wt"><input class="wt-in" id="wt-ex1" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>2 · Single-leg hip thrusts <span class="dose">3 × 12 / leg</span></b>
+            <small>Focus on the glutes and hamstrings.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Single-leg hip thrust: shoulders on bench, hips raised, one leg extended">
+              <path d="M8 80 H114" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <rect x="6" y="38" width="26" height="9" rx="2" fill="#e8722b"/>
+              <path d="M11 47 V60 M27 47 V60" stroke="#1e3329" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="14" cy="26" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M26 40 L54 34"/><path d="M54 34 L70 48 L70 76"/><path d="M54 34 L96 28"/>
+              </g>
+            </svg><div class="wt"><input class="wt-in" id="wt-ex2" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>3 · Knee raises with mini band <span class="dose">3 × 15 / leg</span></b>
+            <small>Strengthens the hip flexors specifically for trail.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Standing knee raise with a mini band around the legs">
+              <path d="M30 88 H92" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="55" cy="12" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M55 22 L55 50"/><path d="M55 50 L57 68 L57 87"/>
+                <path d="M55 50 L76 46 L76 64"/><path d="M55 28 L46 44"/>
+              </g>
+              <path d="M60 72 Q68 68 75 62" stroke="#e8722b" stroke-width="6" stroke-linecap="round" fill="none"/>
+            </svg><div class="wt"><input class="wt-in" id="wt-ex3" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>4 · Side plank with leg lift <span class="dose">3 × 30–40 s / side</span></b>
+            <small>Hip stability and core.</small></div>
+            <svg viewBox="0 0 120 90" role="img" aria-label="Side plank on the forearm with the top leg lifted">
+              <path d="M8 82 H112" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="16" cy="40" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M26 47 L60 62"/><path d="M60 62 L98 78"/>
+                <path d="M27 49 L25 80"/><path d="M14 80 L42 80"/>
+              </g>
+              <path d="M60 62 L102 50" stroke="#e8722b" stroke-width="5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+
+          <div class="finisher">
+            <span><b>Finisher</b> — 2 × 20 calf raises and 2 × 20 s single-leg balance.</span>
+            <svg viewBox="0 0 120 90" role="img" aria-label="Single-leg calf raise and balance">
+              <path d="M32 86 H90" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="58" cy="12" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M58 22 L58 48"/><path d="M58 48 L60 66 L61 79"/>
+                <path d="M61 79 L71 75"/><path d="M58 48 L46 60 L50 73"/>
+                <path d="M58 28 L42 34 M58 28 L74 34"/>
+              </g>
+            </svg>
+          </div>
+  </section>
+
+  <section class="strengthcard">
+    <h2>Friday strength session — 30–35 min, every week</h2>
+
+          <div class="ex">
+            <div class="txt"><b>1 · Single-leg box squat <span class="dose">3 × 10 / leg</span></b>
+            <small>Sit back onto a box or bench and drive up through one leg. Add a dumbbell if possible.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Single-leg box squat: sitting back toward a box on one leg">
+              <path d="M8 82 H112" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <rect x="82" y="56" width="28" height="24" rx="2" fill="#e8722b"/>
+              <circle cx="40" cy="24" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M43 32 L60 50"/>
+                <path d="M60 50 L64 66 L64 80"/>
+                <path d="M60 50 L84 44"/>
+                <path d="M45 34 L66 40"/>
+              </g>
+            </svg><div class="wt"><input class="wt-in" id="wt-fri1" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>2 · Single-leg hip thrusts <span class="dose">3 × 12 / leg</span></b>
+            <small>Focus on the glutes and hamstrings.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Single-leg hip thrust: shoulders on bench, hips raised, one leg extended">
+              <path d="M8 80 H114" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <rect x="6" y="38" width="26" height="9" rx="2" fill="#e8722b"/>
+              <path d="M11 47 V60 M27 47 V60" stroke="#1e3329" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="14" cy="26" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M26 40 L54 34"/>
+                <path d="M54 34 L70 48 L70 76"/>
+                <path d="M54 34 L96 28"/>
+              </g>
+            </svg><div class="wt"><input class="wt-in" id="wt-fri2" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>3 · Knee raises with mini band <span class="dose">3 × 15 / leg</span></b>
+            <small>Strengthens the hip flexors specifically for trail.</small></div>
+            <div class="exfig"><svg viewBox="0 0 120 90" role="img" aria-label="Standing knee raise with a mini band around the legs">
+              <path d="M30 88 H92" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="55" cy="12" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M55 22 L55 50"/>
+                <path d="M55 50 L57 68 L57 87"/>
+                <path d="M55 50 L76 46 L76 64"/>
+                <path d="M55 28 L46 44"/>
+              </g>
+              <path d="M60 72 Q68 68 75 62" stroke="#e8722b" stroke-width="6" stroke-linecap="round" fill="none"/>
+            </svg><div class="wt"><input class="wt-in" id="wt-fri3" inputmode="decimal" placeholder="–"><span>kg</span></div></div>
+          </div>
+
+          <div class="ex">
+            <div class="txt"><b>4 · Dead bug with resistance band <span class="dose">3 × 10 / side</span></b>
+            <small>Deep core stability.</small></div>
+            <svg viewBox="0 0 120 90" role="img" aria-label="Dead bug: lying on the back, opposite arm and leg moving with a band">
+              <path d="M8 80 H112" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="16" cy="70" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M26 73 L58 73"/>
+                <path d="M58 73 L64 52 L82 47"/>
+                <path d="M58 73 L96 60"/>
+                <path d="M36 71 L41 50"/>
+              </g>
+              <path d="M41 50 L63 52" stroke="#e8722b" stroke-width="5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+
+          <div class="finisher">
+            <span><b>Finisher</b> — 2 × 20 calf raises and 2 × 20 s single-leg balance.</span>
+            <svg viewBox="0 0 120 90" role="img" aria-label="Single-leg calf raise and balance">
+              <path d="M32 86 H90" stroke="#c9d6cc" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="58" cy="12" r="8" fill="#1e3329"/>
+              <g fill="none" stroke="#1e3329" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M58 22 L58 48"/>
+                <path d="M58 48 L60 66 L61 79"/>
+                <path d="M61 79 L71 75"/>
+                <path d="M58 48 L46 60 L50 73"/>
+                <path d="M58 28 L42 34 M58 28 L74 34"/>
+              </g>
+            </svg>
+          </div>
+        
+  </section>
+
+
+  <footer>
+    <div>Plan by <b>Elisabet Pärsdotter Westman</b> · plusPT · www.pluspt.se</div>
+    <div>Phase 1 of the road to Stockholm Marathon 2027</div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var KEY = 'sormlands-legacy-checks';
+  var boxes = document.querySelectorAll('.chk input');
+  var kms = document.querySelectorAll('.km-in');
+  var wts = document.querySelectorAll('.wt-in');
+  var fill = document.getElementById('progFill');
+  var txt = document.getElementById('progText');
+
+  var plannedTotal = 0;
+  kms.forEach(function(k){ plannedTotal += parseFloat(k.dataset.planned) || 0; });
+
+  function mark(b){
+    var td = b.closest('td');
+    if (td) td.classList.toggle('done', b.checked);
+    var k = document.getElementById('km-' + b.id);
+    if (k) k.disabled = !b.checked;
+  }
+  function progress(){
+    var done = 0;
+    kms.forEach(function(k){
+      var b = document.getElementById(k.id.slice(3));
+      if (b && b.checked) done += parseFloat((k.value || '').replace(',', '.')) || 0;
+    });
+    var pct = plannedTotal ? Math.min(100, done / plannedTotal * 100) : 0;
+    if (fill) fill.style.width = pct + '%';
+    if (txt) txt.textContent = (Math.round(done * 10) / 10) + ' / ' + Math.round(plannedTotal) + ' km';
+  }
+  function collect(){
+    var s = { checks: {}, km: {}, wt: {} };
+    boxes.forEach(function(b){ if (b.checked) s.checks[b.id] = true; });
+    kms.forEach(function(k){ if (k.value) s.km[k.id] = k.value; });
+    wts.forEach(function(w){ if (w.value) s.wt[w.id] = w.value; });
+    return s;
+  }
+  function apply(st){
+    st = st || {};
+    var checks = st.checks || st;   // supports the older flat format
+    var km = st.km || {};
+    var wt = st.wt || {};
+    boxes.forEach(function(b){ b.checked = !!checks[b.id]; });
+    kms.forEach(function(k){ k.value = km[k.id] || ''; });
+    wts.forEach(function(w){ w.value = wt[w.id] || ''; });
+    boxes.forEach(mark);
+    progress();
+  }
+  function save(st){
+    var json = JSON.stringify(st);
+    try { localStorage.setItem(KEY, json); } catch(e) {}
+    try { if (window.storage && window.storage.set) window.storage.set(KEY, json); } catch(e) {}
+  }
+  function loadFallback(){
+    try {
+      var v = localStorage.getItem(KEY);
+      if (v) apply(JSON.parse(v));
+    } catch(e) {}
+  }
+  function load(){
+    var used = false;
+    try {
+      if (window.storage && window.storage.get) {
+        used = true;
+        window.storage.get(KEY)
+          .then(function(r){ apply(JSON.parse(r.value) || {}); })
+          .catch(function(){ loadFallback(); });
+      }
+    } catch(e) { used = false; }
+    if (!used) loadFallback();
+  }
+
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){ mark(b); progress(); save(collect()); });
+  });
+  kms.forEach(function(k){
+    k.addEventListener('input', function(){ progress(); save(collect()); });
+  });
+  wts.forEach(function(w){
+    w.addEventListener('input', function(){ save(collect()); });
+  });
+
+  boxes.forEach(mark);
+  progress();
+  load();
+})();
+</script>
+</body>
+</html>
