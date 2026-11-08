@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Tracker — Block M1 (9 Nov – 6 Dec 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f5;--card:#fff;--ink:#1c1d1b;--muted:#7a7d77;--line:#ebeae6;--field:#f4f4f1;
+  --accent:#2f6b4f;
+  --z1:#5b8def;--z2:#3fa37a;--z3:#d8a630;--z4:#e07b39;--z5:#c8433b;
+  --strength:#7a5ccf;--easy:#3fa37a;--hills:#e07b39;--intervals:#c8433b;--core:#4b8fbf;--long:#2f6b4f;--rest:#b4b6b0;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121412;--card:#1b1d1b;--ink:#ecebe6;--muted:#8f938b;--line:#2a2d29;--field:#232623;--accent:#6fc79a}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+#auth{display:flex;flex-direction:column;align-items:flex-end;gap:4px;font-size:.78rem;color:var(--muted);text-align:right}
+.gbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:999px;font:inherit;font-size:.82rem;font-weight:500;cursor:pointer;white-space:nowrap}
+.gbtn svg{width:16px;height:16px}
+.who{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:500}
+.who img,.who .ini{width:26px;height:26px;border-radius:50%;flex:none}
+.who .ini{background:var(--accent);color:#fff;display:grid;place-items:center;font-size:.75rem}
+.linkbtn{background:none;border:0;padding:0;color:var(--muted);font:inherit;font-size:.75rem;text-decoration:underline;cursor:pointer}
+header h1{font-size:1.4rem;font-weight:700;margin:0;letter-spacing:-.01em}
+header p{color:var(--muted);margin:2px 0 0;font-size:.9rem}
+
+/* week bar */
+.weekbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:16px 0 12px;margin-bottom:4px}
+.select-wrap{position:relative}
+.select-wrap::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+select{appearance:none;-webkit-appearance:none;width:100%;font:inherit;font-weight:600;font-size:1.05rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 40px 12px 14px;cursor:pointer}
+.wstats{display:flex;gap:18px;margin-top:10px;font-size:.85rem;color:var(--muted)}
+.wstats b{color:var(--ink);font-weight:600}
+.bar{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:10px}
+.bar>i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+
+/* sessions */
+.sess{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+.shead{display:flex;align-items:flex-start;gap:12px}
+.check{width:22px;height:22px;margin:2px 0 0;accent-color:var(--accent);flex:none;cursor:pointer}
+.sbody{flex:1;min-width:0}
+.meta{display:flex;align-items:center;gap:6px;font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+.dot{width:7px;height:7px;border-radius:50%;flex:none}
+.title{font-weight:600;font-size:1rem;margin-top:2px}
+.sess.done .title{color:var(--muted)}
+.sess.done .title::after{content:" ✓";color:var(--accent)}
+.desc{margin:4px 0 0;font-size:.88rem;color:var(--muted)}
+.segs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.seg{font-size:.78rem;padding:3px 9px;border-radius:999px;background:var(--field);white-space:nowrap}
+.seg i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}
+.fields{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.fields.two{grid-template-columns:repeat(2,1fr)}
+.fields label{font-size:.72rem;color:var(--muted);display:block;margin-bottom:3px}
+.fields input,.fields textarea{width:100%;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:var(--field);color:var(--ink);font:inherit;font-size:.92rem}
+.fields input:focus,.fields textarea:focus,.kg:focus{outline:none;border-color:var(--accent);background:var(--card)}
+.fields .wide{grid-column:1/-1}
+.fields textarea{min-height:38px;height:38px;resize:vertical}
+.hint{font-size:.75rem;color:var(--muted);margin-top:4px}
+.spark{display:flex;align-items:flex-end;gap:2px;height:40px;margin-top:8px}
+.spark div{flex:1;min-width:4px;max-width:20px;border-radius:3px 3px 0 0;position:relative}
+.spark div span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:.58rem;color:var(--muted)}
+.warn{color:var(--z4)}
+.rest{display:flex;align-items:center;gap:10px;padding:10px 16px;margin-bottom:10px;color:var(--muted);font-size:.88rem;border:1px dashed var(--line);border-radius:14px}
+
+/* routine checklist */
+details>summary{cursor:pointer;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+.routine{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.rhead{font-size:.88rem;font-weight:600}
+.rhead .hint{font-weight:500;margin:0 0 0 8px}
+.tabs{display:flex;background:var(--field);border-radius:12px;padding:4px;margin-top:18px;gap:4px}
+.tab{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-weight:600;font-size:.9rem;padding:9px 10px;border-radius:9px;cursor:pointer}
+.tab.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.mat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:14px}
+.mat h3{margin:0;font-size:1rem}
+.mat .msub{font-size:.82rem;color:var(--muted);margin:2px 0 10px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mat .msub a{color:var(--accent);text-decoration:none;font-weight:500;white-space:nowrap}
+.viewer{background:var(--field);border-radius:10px;overflow:hidden;min-height:120px;display:grid;place-items:center}
+.viewer canvas,.viewer img{display:block;width:100%;height:auto;background:#fff}
+.viewer canvas+canvas{margin-top:6px}
+.viewer iframe{width:100%;height:80vh;border:0;background:#fff}
+.viewer .loading{color:var(--muted);font-size:.85rem;padding:30px}
+.totals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.tot{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.tot b{display:block;font-size:1.45rem;font-weight:700;letter-spacing:-.01em}
+.tot b small{font-size:.8rem;font-weight:500;color:var(--muted);margin-left:2px}
+.tot span{font-size:.75rem;color:var(--muted)}
+.exgroup{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:16px 0 4px}
+.ex{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.ex:last-child{border-bottom:0}
+.ex input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);flex:none}
+.exname{flex:1;display:flex;flex-direction:column;font-size:.92rem}
+.exname b{font-weight:500}
+.exname small{color:var(--muted);font-size:.76rem}
+.exdone .exname b{text-decoration:line-through;color:var(--muted)}
+.kg{width:78px;padding:6px 8px;border:1px solid transparent;border-radius:7px;background:var(--field);color:var(--ink);font:inherit;font-size:.88rem;text-align:right}
+
+/* reference */
+.ref{margin-top:36px}
+.ref h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin:0 0 8px}
+.ref details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
+.ref summary{padding:12px 16px;font-weight:600;font-size:.92rem;display:flex;justify-content:space-between}
+.ref summary::after{content:"+";color:var(--muted);font-weight:400}
+.ref details[open] summary::after{content:"–"}
+.ref .inner{padding:0 16px 14px;font-size:.88rem}
+.ref ul{margin:0;padding-left:18px}
+.ref li{margin-bottom:4px}
+.ref p{margin:0 0 8px}
+.ref h3{font-size:.82rem;margin:12px 0 4px}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.pending{color:var(--muted);font-style:italic}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:.85rem}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#io{width:100%;min-height:70px;margin-top:10px;font-family:ui-monospace,monospace;font-size:.72rem;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--ink);padding:8px}
+#msg{font-size:.82rem;color:var(--accent)}
+.blocksum{font-size:.85rem;color:var(--muted);margin:0 0 10px}
+.blocksum b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Trail Running · Block M1</h1>
+      <p>9 Nov – 6 Dec 2026</p>
+    </div>
+    <div id="auth"></div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab on" data-view="plan" role="tab">Training plan</button>
+    <button class="tab" data-view="materials" role="tab">Exercise sheets</button>
+  </nav>
+
+  <div id="viewPlan">
+  <div class="totals" id="totals"></div>
+
+  <div class="weekbar">
+    <div class="select-wrap"><select id="weekSel" aria-label="Select week"></select></div>
+    <div class="wstats" id="wstats"></div>
+    <div class="bar"><i id="wbar"></i></div>
+  </div>
+
+  <div id="sessions"></div>
+
+  <section class="ref">
+    <h2>Reference</h2>
+
+    <details>
+      <summary>Heart-rate targets</summary>
+      <div class="inner">
+        <div class="legend" id="zoneLegend"></div>
+        <ul>
+          <li>15' = 15 minutes · &lt; 132 = keep HR below 132 bpm</li>
+          <li>Hills: road, trail or treadmill on incline · Flat: road or track</li>
+          <li>HR per km: enter your average HR for each km split, separated by commas (e.g. 128, 130, 131)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Leg strength (gym)</summary>
+      <div class="inner">
+        <ul>
+          <li>Warm-up: 10 min on the bike</li>
+          <li>4 sets per exercise, descending reps: 30 · 25 · 20 · 15 (5&nbsp;kg increase)</li>
+          <li>Unilateral work is the priority</li>
+          <li>Low loads, high reps. Adjust the weight so you can complete all the reps</li>
+          <li>Tempo: lower 5× slower than you lift (e.g. 1 s up, 5 s down)</li>
+          <li>Rest, unilateral: one leg works while the other rests</li>
+          <li>Rest, bilateral: no more than 30 s between sets</li>
+          <li>Intense session, so finish with gentle stretching</li>
+        </ul>
+        <h3>Stretching</h3>
+        <ul>
+          <li>Hold 30 s (same leg), 2–3× per leg, alternating legs</li>
+          <li>Don't force the stretch. After long or intense sessions, stretch later in the day</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Core, flexibility &amp; proprioception</summary>
+      <div class="inner">
+        <ul>
+          <li>Static holds: 6 × 40 s, planks and bridges progressing to single-leg versions</li>
+          <li>Abdominals: 4 exercises, 15–20 reps</li>
+          <li>Glutes / pelvis: 6 exercises, 12–15 reps or 40 s</li>
+          <li>Optional with dumbbells at home: side bend, bow extension, Russian twist, V-up, V-sit cross jab</li>
+          <li>Proprioception: ~10 min of balance work, on a BOSU or similar at the gym, or at home</li>
+          <li>Also work on flexibility; a more specific class can help with this</li>
+        </ul>
+        <p class="pending" style="margin-top:8px">Balance routine details to be added after the phone call with the coach.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Backup &amp; data</summary>
+      <div class="inner">
+        <p>Signed in with Google, your data is saved to your account and syncs across devices. Signed out, it stays in this browser only. You can also copy a backup.</p>
+        <div class="row">
+          <button class="btn primary" id="copyBtn">Copy backup</button>
+          <button class="btn" id="importBtn">Import</button>
+          <button class="btn" id="resetBtn">Clear all</button>
+          <span id="msg"></span>
+        </div>
+        <textarea id="io" placeholder="Backup appears here, or paste one to import"></textarea>
+      </div>
+    </details>
+  </section>
+  </div>
+
+  <div id="viewMaterials" hidden>
+    <div id="materials"></div>
+  </div>
+</div>
+
+<script type="module">
+// ---------- Routines ----------
+const ROUTINES = {
+  legs: [
+    {group:"Warm-up", items:[
+      ["warm-bike","Stationary bike","10 min, easy"]
+    ]},
+    {group:"Gym machines — 4 sets × 30 · 25 · 20 · 15 reps (5\u00a0kg increase) · 5 s lowering", items:[
+      ["leg-ext","Leg extension","Unilateral",1],
+      ["leg-curl","Leg curl","Unilateral",1],
+      ["abd","Hip abduction machine","Both legs · ≤30 s rest between sets",1],
+      ["add","Hip adduction machine","Both legs · ≤30 s rest between sets",1],
+      ["calf","Calf raises on leg press","Both legs · ≤30 s rest between sets",1]
+    ]},
+    {group:"Stretching — 30 s holds, 2–3× per leg, alternating", items:[
+      ["st-calf","Calves","Standing, back leg straight, heel down"],
+      ["st-ach","Achilles tendon","Against a wall, back knee bent"],
+      ["st-ham","Hamstrings","Seated, legs straight, reach forward"],
+      ["st-hip","Hip flexors (iliopsoas)","Lunge position, push hips forward"],
+      ["st-add","Adductors","Seated, soles of feet together"],
+      ["st-glu","Glutes","Seated, cross one leg over and twist"],
+      ["st-quad","Quadriceps","Standing, heel to glute"]
+    ]}
+  ],
+  core: [
+    {group:"Static holds — 40 s each", items:[
+      ["c-plank","Front plank","Straight arms, body in a line"],
+      ["c-bridge","Glute bridge hold","On your back, hips raised",1],
+      ["c-side","Side plank","On forearm"],
+      ["c-plank1","Front plank, one leg raised","Forearms, alternate legs"],
+      ["c-bridge1","Glute bridge, one leg raised","Extend one leg, hips level",1],
+      ["c-side1","Side plank, top leg raised","Raise top leg"]
+    ]},
+    {group:"Abdominals", items:[
+      ["a-cross","Cross crunches","20 reps",1],
+      ["a-crunch","Crunches","20 reps",1],
+      ["a-straight","Straight-leg sit-ups, arms reaching forward","20 reps",1],
+      ["a-feet","Crunches with feet in the air","15 reps · knees and hips at 90°",1]
+    ]},
+    {group:"Glutes / pelvis", items:[
+      ["g-side","Side-lying leg raises","12 reps each leg",1],
+      ["g-stretch","Glute stretch","40 s · lying down, pull knee to chest"],
+      ["g-med","Glute medius: side-lying raise with band","40 s"],
+      ["g-tilt","Pelvic lift (bridge)","15 reps",1],
+      ["g-kick","Glute kickbacks on all fours","15 reps",1],
+      ["g-legraise","Bridge with straight-leg raise","15 reps",1]
+    ]},
+    {group:"Optional — dumbbell core circuit (if you have weights)", optional:true, items:[
+      ["d-sidebend","Side bend","Standing, dumbbell in one hand",1],
+      ["d-bow","Bow extension","Dumbbell overhead, lift a knee",1],
+      ["d-twist","Russian twist","Seated, rotate side to side",1],
+      ["d-vup","V-up","Lying down to V position",1],
+      ["d-jab","V-sit cross jab","Seated V, punch across",1]
+    ]},
+    {group:"Proprioception — ~10 min balance", items:[
+      ["p-balance","Balance exercises (~10 min)","BOSU or similar at the gym, or at home. Details to follow after the phone call"]
+    ]}
+  ]
+};
+
+// ---------- Plan data ----------
+const ZONES = {
+  easy:  {label:"< 132 bpm", name:"Easy", color:"var(--z1)", max:132},
+  z135:  {label:"135–140 bpm", name:"Steady", color:"var(--z2)", min:135, max:140},
+  z140:  {label:"140–145 bpm", name:"Moderate", color:"var(--z3)", min:140, max:145},
+  z145:  {label:"145–150 bpm", name:"Tempo", color:"var(--z4)", min:145, max:150},
+  z170:  {label:"170–174 bpm", name:"Hard reps", color:"var(--z5)", min:170, max:174}
+};
+const TYPES = {
+  strength:{name:"Strength",color:"var(--strength)"},
+  easy:{name:"Easy run",color:"var(--easy)"},
+  hills:{name:"Hills",color:"var(--hills)"},
+  intervals:{name:"Intervals",color:"var(--intervals)"},
+  core:{name:"Core + balance",color:"var(--core)"},
+  long:{name:"Progressive long",color:"var(--long)"},
+  rest:{name:"Rest",color:"var(--rest)"}
+};
+const S = {
+  legs: ()=>({type:"strength",title:"Leg strength (gym)",desc:"10' bike warm-up, then 5 machine exercises × 4 sets (30 · 25 · 20 · 15 reps, 5\u00a0kg increase), slow 5 s lowering, then gentle stretching.",routine:"legs",run:false}),
+  easy: ()=>({type:"easy",title:"1 h easy run",desc:"1 h at HR < 132.",segs:[["60'","easy"]],terrain:"Flat or gently rolling (road or trail)",run:true}),
+  hills:(n,m)=>({type:"hills",title:`Hill reps ${n}×${m}'`,desc:`15' warm-up < 132 + ${n}×${m}' uphill at 170–174 + 10' cool-down < 132.`,segs:[["15'","easy"],[`${n}×${m}'`,"z170"],["10'","easy"]],terrain:"Hills — road, trail or treadmill",run:true}),
+  km:(reps,label)=>({type:"intervals",title:`Intervals ${label}`,desc:`15' warm-up < 132 + ${label} at 170–174 + 10' cool-down < 132.`,segs:[["15'","easy"],[label,"z170"],["10'","easy"]],terrain:"Flat — road or track",run:true}),
+  core: ()=>({type:"core",title:"Core + proprioception",desc:"Static holds, abdominals and glutes/pelvis work, the optional dumbbell core circuit, then ~10' of balance work.",routine:"core",run:false}),
+  long:(segs)=>{
+    const total = segs.reduce((a,s)=>a+parseInt(s[0]),0);
+    return {type:"long",title:`Progressive run ${total}'`,desc:segs.map(s=>`${s[0]} ${ZONES[s[1]].label.replace(" bpm","")}`).join(" + ")+" (bpm).",segs,terrain:"Flat or little elevation (road or trail)",run:true};
+  },
+  rest: ()=>({type:"rest",title:"Rest",desc:"No session scheduled.",run:false})
+};
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const WEEKS = [
+  [S.legs(), S.easy(), S.hills(5,3), S.easy(), S.core(), S.long([["10'","easy"],["50'","z135"],["10'","z140"]]), S.rest()],
+  [S.legs(), S.hills(6,3), S.easy(), S.km(5,"5×1 km"), S.core(), S.long([["10'","easy"],["50'","z135"],["20'","z140"],["10'","z145"]]), S.rest()],
+  [S.legs(), S.easy(), S.hills(5,4), S.easy(), S.core(), S.long([["10'","easy"],["50'","z135"],["20'","z140"],["10'","z145"]]), S.rest()],
+  [S.legs(), S.hills(6,4), S.easy(), S.km(5,"4×1 km + 1×2 km"), S.core(), S.long([["10'","easy"],["40'","z135"],["25'","z140"],["15'","z145"]]), S.rest()]
+];
+const START = new Date(2026,10,9); // 9 Nov 2026 (Mon)
+const SESSIONS = [];
+WEEKS.forEach((w,wi)=>w.forEach((s,di)=>{
+  const d = new Date(START); d.setDate(START.getDate()+wi*7+di);
+  const iso = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  SESSIONS.push({...s,id:iso,week:wi,dow:DOW[di],date:d,label:d.toLocaleDateString("en-GB",{day:"numeric",month:"short"})});
+}));
+
+// ---------- Cloud sync settings ----------
+// Paste the config from Firebase console → Project settings → Your apps → Web app.
+// These values are not secret; access is protected by Google sign-in + Firestore rules.
+const FIREBASE_CONFIG = {
+  apiKey: "PASTE_API_KEY",
+  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
+  projectId: "PASTE_PROJECT_ID",
+  appId: "PASTE_APP_ID"
+};
+const PLAN_ID = "m1-2026";   // one Firestore document per training block
+const FB = "https://www.gstatic.com/firebasejs/10.12.2/";
+
+// ---------- Storage ----------
+const KEY = "rui-trail-m1-2026";          // local cache when signed out
+let localKey = KEY;                       // becomes KEY:uid when signed in
+let store = {};
+const readLocal = k => { try{ return JSON.parse(localStorage.getItem(k)) || {}; }catch(e){ return {}; } };
+const writeLocal = (k,v) => { try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} };
+store = readLocal(KEY);
+
+let cloud = null;      // {db, auth, fns, user}
+let pushTimer = null;
+function save(){
+  store._updated = Date.now();
+  writeLocal(localKey, store);
+  if(cloud && cloud.user){
+    setSync("Saving…");
+    clearTimeout(pushTimer);
+    pushTimer = setTimeout(pushCloud, 800);
+  }
+}
+async function pushCloud(){
+  if(!cloud || !cloud.user) return;
+  const {doc, setDoc, serverTimestamp} = cloud.fns;
+  try{
+    await setDoc(doc(cloud.db, "users", cloud.user.uid, "plans", PLAN_ID), {data: JSON.stringify(store), updated: store._updated||Date.now(), savedAt: serverTimestamp()});
+    setSync("Synced ✓");
+  }catch(e){ console.error(e); setSync("Not synced, retrying on next change"); }
+}
+const get = id => store[id] || (store[id] = {});
+const hasData = s => Object.keys(s||{}).some(k=>k!=="_updated");
+
+// ---------- Auth UI ----------
+const G_ICON = '<svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>';
+let syncText = "";
+function setSync(t){ syncText = t; const el = document.getElementById("syncState"); if(el) el.textContent = t; }
+function renderAuth(){
+  const box = document.getElementById("auth");
+  if(!cloud){ box.innerHTML = ""; return; }
+  if(!cloud.user){
+    box.innerHTML = `<button class="gbtn" id="signIn">${G_ICON}Sign in with Google</button><span>${syncText||"Saved on this device only"}</span>`;
+    document.getElementById("signIn").onclick = signIn;
+    return;
+  }
+  const u = cloud.user, name = u.displayName || u.email || "Signed in";
+  const pic = u.photoURL ? `<img src="${u.photoURL}" alt="" referrerpolicy="no-referrer">` : `<span class="ini">${name[0].toUpperCase()}</span>`;
+  box.innerHTML = `<span class="who">${pic}${name.split(" ")[0]}</span><span id="syncState">${syncText}</span><button class="linkbtn" id="signOut">Sign out</button>`;
+  document.getElementById("signOut").onclick = ()=> cloud.fns.signOut(cloud.auth);
+}
+async function signIn(){
+  const {GoogleAuthProvider, signInWithPopup, signInWithRedirect} = cloud.fns;
+  const provider = new GoogleAuthProvider();
+  try{ await signInWithPopup(cloud.auth, provider); }
+  catch(e){
+    if(["auth/popup-blocked","auth/operation-not-supported-in-this-environment","auth/cancelled-popup-request"].includes(e.code)) await signInWithRedirect(cloud.auth, provider);
+    else if(e.code!=="auth/popup-closed-by-user") alertBox("Sign-in failed: "+(e.code||e.message));
+  }
+}
+function alertBox(t){ setSync(t); renderAuth(); }
+
+async function onUser(user){
+  cloud.user = user;
+  if(!user){
+    localKey = KEY; store = readLocal(KEY); syncText = "";
+    renderAuth(); renderAll(); return;
+  }
+  localKey = KEY + ":" + user.uid;
+  setSync("Loading your data…"); renderAuth();
+  const {doc, getDoc} = cloud.fns;
+  let remote = null;
+  try{
+    const snap = await getDoc(doc(cloud.db, "users", user.uid, "plans", PLAN_ID));
+    if(snap.exists()) remote = JSON.parse(snap.data().data || "{}");
+  }catch(e){ console.error(e); }
+  const cached = readLocal(localKey), anon = readLocal(KEY);
+  // pick the newest copy; first sign-in adopts anything entered while signed out
+  const candidates = [remote, cached, hasData(remote)||hasData(cached) ? null : anon].filter(hasData);
+  candidates.sort((a,b)=>(b._updated||0)-(a._updated||0));
+  store = candidates[0] || {};
+  if(store === anon) writeLocal(KEY, {});   // moved into the account; clear the signed-out copy
+  writeLocal(localKey, store);
+  if(!remote || (store._updated||0) > (remote._updated||0)) { if(hasData(store)) await pushCloud(); else setSync("Synced ✓"); }
+  else setSync("Synced ✓");
+  renderAuth(); renderAll();
+}
+
+async function initCloud(){
+  if(FIREBASE_CONFIG.apiKey.startsWith("PASTE")) return;   // not configured: local-only mode
+  try{
+    const [app, auth, fs] = await Promise.all([
+      import(FB+"firebase-app.js"), import(FB+"firebase-auth.js"), import(FB+"firebase-firestore.js")
+    ]);
+    const a = app.initializeApp(FIREBASE_CONFIG);
+    cloud = { auth: auth.getAuth(a), db: fs.getFirestore(a), user: null, fns: {...auth, ...fs} };
+    renderAuth();
+    auth.getRedirectResult(cloud.auth).catch(()=>{});
+    auth.onAuthStateChanged(cloud.auth, onUser);
+  }catch(e){ console.error("Cloud sync unavailable", e); cloud = null; }
+}
+
+// ---------- Helpers ----------
+const num = v => { const n = parseFloat(String(v).replace(",",".")); return isFinite(n) ? n : null; };
+const parseSplits = s => (s||"").split(/[,;\s]+/).map(x=>parseFloat(x)).filter(n=>isFinite(n) && n>30 && n<230);
+const zoneColor = hr => hr<132?ZONES.easy.color: hr<=140?ZONES.z135.color: hr<=145?ZONES.z140.color: hr<=165?ZONES.z145.color: ZONES.z170.color;
+const fmt = (n,d=1) => n==null ? "–" : (Math.round(n*10**d)/10**d).toString();
+
+function weekStats(wi){
+  const list = SESSIONS.filter(s=>wi==null || s.week===wi).filter(s=>s.type!=="rest");
+  let done=0, km=0, dplus=0, hrNum=0, hrDen=0, runs=0;
+  list.forEach(s=>{
+    const r = store[s.id]||{};
+    if(r.done) done++;
+    const k = num(r.km), h = num(r.hr), dp = num(r.dplus);
+    if(k){ km+=k; if(s.run) runs++; }
+    if(dp) dplus+=dp;
+    if(h){ const w = k||1; hrNum+=h*w; hrDen+=w; }
+  });
+  return {total:list.length, done, km, dplus, hr: hrDen? hrNum/hrDen : null, runs};
+}
+
+// ---------- Render ----------
+let current = 0;
+function initialWeek(){
+  const h = location.hash.match(/^#week-([1-4])$/);
+  if(h) return +h[1]-1;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const diff = Math.floor((today-START)/864e5/7);
+  return Math.min(3, Math.max(0, diff));
+}
+function weekLabel(i){
+  const a = new Date(START); a.setDate(START.getDate()+i*7);
+  const b = new Date(a); b.setDate(a.getDate()+6);
+  const m = d => d.toLocaleDateString("en-GB",{month:"short"});
+  const range = a.getMonth()===b.getMonth() ? `${a.getDate()} – ${b.getDate()} ${m(b)}` : `${a.getDate()} ${m(a)} – ${b.getDate()} ${m(b)}`;
+  return `Week ${i+1}: ${range}`;
+}
+
+function renderSelect(){
+  const sel = document.getElementById("weekSel");
+  sel.innerHTML = WEEKS.map((_,i)=>{ const s = weekStats(i); return `<option value="${i}" ${i===current?"selected":""}>${weekLabel(i)}${s.done?`  (${s.done}/${s.total})`:""}</option>`; }).join("");
+}
+{
+  document.getElementById("weekSel").addEventListener("change", e=>{
+    current = +e.target.value;
+    try{ history.replaceState(null,"","#week-"+(current+1)); }catch(err){}
+    renderAll(); window.scrollTo({top:0});
+  });
+}
+
+function renderStats(){
+  const s = weekStats(current);
+  document.getElementById("wstats").innerHTML = `
+    <span><b>${s.done}/${s.total}</b> done</span>
+    <span><b>${fmt(s.km)}</b> km</span>
+    <span><b>${fmt(s.dplus,0)}</b> m D+</span>
+    <span><b>${fmt(s.hr,0)}</b> avg HR</span>`;
+  document.getElementById("wbar").style.width = (100*s.done/s.total)+"%";
+  const b = weekStats(null);
+  document.getElementById("totals").innerHTML = `
+    <div class="tot"><b>${fmt(b.km)}<small>km</small></b><span>Total distance</span></div>
+    <div class="tot"><b>${fmt(b.dplus,0)}<small>m</small></b><span>Total D+</span></div>
+    <div class="tot"><b>${b.done}<small>/ ${b.total}</small></b><span>Sessions done</span></div>`;
+}
+
+function splitsHTML(r){
+  const sp = parseSplits(r.splits);
+  if(!sp.length) return "";
+  const lo = Math.min(...sp)-5, hi = Math.max(...sp)+2;
+  const avg = sp.reduce((a,b)=>a+b,0)/sp.length;
+  const k = num(r.km);
+  const mismatch = k && Math.abs(Math.ceil(k - 0.05) - sp.length) > 1;
+  return `<div class="spark">${sp.map((h,i)=>`<div title="km ${i+1}: ${h} bpm" style="height:${Math.max(8,100*(h-lo)/(hi-lo))}%;background:${zoneColor(h)}"><span>${sp.length<=15?h:""}</span></div>`).join("")}</div>
+  <div class="hint">${sp.length} splits · mean ${fmt(avg,0)} · range ${Math.min(...sp)}–${Math.max(...sp)} bpm${mismatch?` · <span class="warn">${sp.length} splits vs ${k} km</span>`:""}</div>`;
+}
+
+function routineCount(s,r){
+  const ex = (r&&r.ex)||{}; let done=0,total=0;
+  ROUTINES[s.routine].forEach(g=>{ if(g.optional) return; g.items.forEach(([id])=>{ total++; if(ex[id]&&ex[id].d) done++; }); });
+  return {done,total};
+}
+const countText = c => `${c.done}/${c.total}${c.done===c.total?" ✓":""}`;
+function routineHTML(s,r){
+  const ex = r.ex||{}, c = routineCount(s,r);
+  return `<div class="routine">
+    <div class="rhead">Exercises<span class="hint" data-count="${s.id}">${countText(c)}</span></div>
+    ${ROUTINES[s.routine].map(g=>`
+      <div class="exgroup">${g.group}</div>
+      ${g.items.map(([id,name,note,w])=>{ const e = ex[id]||{}; return `
+        <label class="ex ${e.d?"exdone":""}">
+          <input type="checkbox" data-ex="${id}" data-sid="${s.id}" ${e.d?"checked":""}>
+          <span class="exname"><b>${name}</b><small>${note}</small></span>
+          ${w?`<input class="kg" inputmode="decimal" placeholder="max kg" data-kg="${id}" data-sid="${s.id}" value="${e.kg||""}">`:""}
+        </label>`;}).join("")}
+    `).join("")}
+  </div>`;
+}
+
+const inp = (s,r,f,label,mode,ph) => `<div><label>${label}</label><input inputmode="${mode}" data-id="${s.id}" data-f="${f}" value="${r[f]||""}" placeholder="${ph}"></div>`;
+
+function sessionHTML(s){
+  const r = store[s.id]||{}, t = TYPES[s.type];
+  if(s.type==="rest"){
+    return `<div class="rest"><span class="dot" style="background:${t.color}"></span>${s.dow} ${s.label} · Rest day</div>`;
+  }
+  const segs = (s.segs||[]).map(([d,z])=>`<span class="seg"><i style="background:${ZONES[z].color}"></i>${d} · ${ZONES[z].label.replace(" bpm","")}</span>`).join("");
+  const fields = s.run
+    ? `<div class="fields">
+        ${inp(s,r,"km","Km","decimal","–")}
+        ${inp(s,r,"hr","Avg HR","numeric","–")}
+        ${inp(s,r,"dplus","D+ (m)","numeric","–")}
+        <div class="wide"><label>HR per km</label><input inputmode="text" data-id="${s.id}" data-f="splits" value="${r.splits||""}" placeholder="126, 129, 130…">
+          <div data-spark="${s.id}">${splitsHTML(r)}</div></div>
+        <div class="wide"><label>Notes</label><textarea data-id="${s.id}" data-f="notes" placeholder="How did it feel?">${r.notes||""}</textarea></div>
+      </div>`
+    : `<div class="fields two">
+        ${inp(s,r,"dur","Duration (min)","numeric","–")}
+        ${inp(s,r,"hr","Avg HR","numeric","–")}
+        <div class="wide"><label>Notes</label><textarea data-id="${s.id}" data-f="notes" placeholder="How did it feel?">${r.notes||""}</textarea></div>
+      </div>`;
+  return `<div class="sess ${r.done?"done":""}" data-sess="${s.id}">
+    <div class="shead">
+      <input class="check" type="checkbox" data-id="${s.id}" data-f="done" ${r.done?"checked":""} aria-label="Mark done">
+      <div class="sbody">
+        <div class="meta"><span class="dot" style="background:${t.color}"></span>${s.dow} ${s.label} · ${t.name}</div>
+        <div class="title">${s.title}</div>
+        ${segs?`<div class="segs">${segs}</div>`:`<p class="desc">${s.desc}</p>`}
+        ${s.terrain?`<p class="desc">${s.terrain}</p>`:""}
+      </div>
+    </div>
+    ${s.routine?routineHTML(s,r):""}
+    ${fields}
+  </div>`;
+}
+
+function renderSessions(){
+  const box = document.getElementById("sessions");
+  box.innerHTML = SESSIONS.filter(s=>s.week===current).map(sessionHTML).join("");
+  box.querySelectorAll("[data-f]").forEach(el=>{
+    const ev = el.type==="checkbox" ? "change" : "input";
+    el.addEventListener(ev, ()=>{
+      const r = get(el.dataset.id), f = el.dataset.f;
+      r[f] = el.type==="checkbox" ? el.checked : el.value;
+      if(f==="splits" || f==="km"){
+        const holder = box.querySelector(`[data-spark="${el.dataset.id}"]`);
+        if(holder) holder.innerHTML = splitsHTML(r);
+      }
+      save();
+      if(el.type==="checkbox"){ el.closest(".sess").classList.toggle("done", el.checked); renderSelect(); }
+      renderStats();
+    });
+  });
+  box.querySelectorAll("[data-ex]").forEach(el=>el.addEventListener("change",()=>{
+    const r = get(el.dataset.sid); r.ex = r.ex||{}; const e = r.ex[el.dataset.ex] = r.ex[el.dataset.ex]||{};
+    e.d = el.checked; save();
+    el.closest(".ex").classList.toggle("exdone", el.checked);
+    const s = SESSIONS.find(x=>x.id===el.dataset.sid);
+    box.querySelector(`[data-count="${s.id}"]`).textContent = countText(routineCount(s,r));
+  }));
+  box.querySelectorAll("[data-kg]").forEach(el=>el.addEventListener("input",()=>{
+    const r = get(el.dataset.sid); r.ex = r.ex||{}; const e = r.ex[el.dataset.kg] = r.ex[el.dataset.kg]||{};
+    e.kg = el.value; save();
+  }));
+}
+
+function renderLegend(){
+  document.getElementById("zoneLegend").innerHTML = Object.values(ZONES).map(z=>`<span class="seg"><i style="background:${z.color}"></i>${z.name}: ${z.label}</span>`).join("");
+}
+
+function renderAll(){ renderSelect(); renderStats(); renderSessions(); }
+
+// ---------- Exercise sheets ----------
+const MATERIALS = [
+  {id:"legs", title:"Leg strength (gym)", sub:"Coach's sheet: machine exercises and stretches", pdf:"materials/leg-strength-gym.pdf"},
+  {id:"core", title:"Core strengthening", sub:"Coach's sheet: static holds, abdominals, glutes and pelvis", pdf:"materials/core-strength.pdf"},
+  {id:"dumbbell", title:"Dumbbell circuit", sub:"Use the Core column (optional, if you have weights)", img:"materials/dumbbell-circuit.jpg"}
+];
+const PDFJS = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/legacy/build/";
+let pdfjs = null;
+let materialsDone = false;
+async function renderPdf(url, box){
+  try{
+    if(!pdfjs){ pdfjs = await import(PDFJS+"pdf.min.mjs"); pdfjs.GlobalWorkerOptions.workerSrc = PDFJS+"pdf.worker.min.mjs"; }
+    const pdf = await pdfjs.getDocument({url}).promise;
+    box.innerHTML = "";
+    const width = box.clientWidth || 600, dpr = Math.min(3,(window.devicePixelRatio||1)*1.5);
+    for(let n=1;n<=pdf.numPages;n++){
+      const page = await pdf.getPage(n);
+      const base = page.getViewport({scale:1});
+      const vp = page.getViewport({scale: width/base.width*dpr});
+      const c = document.createElement("canvas"); c.width = vp.width; c.height = vp.height;
+      box.appendChild(c);
+      await page.render({canvasContext:c.getContext("2d"), viewport:vp}).promise;
+    }
+  }catch(e){
+    console.error(e);
+    box.innerHTML = `<iframe src="${url}" title="PDF"></iframe>`;
+  }
+}
+function renderMaterials(){
+  if(materialsDone) return; materialsDone = true;
+  const imgs = window.MATERIAL_IMAGES || null;   // inline page images (used where PDFs can't be served)
+  const box = document.getElementById("materials");
+  box.innerHTML = MATERIALS.map(m=>{
+    const link = imgs ? "" : `<a href="${m.pdf||m.img}" target="_blank" rel="noopener">Open full size ↗</a>`;
+    return `<div class="mat"><h3>${m.title}</h3><div class="msub"><span>${m.sub}</span>${link}</div><div class="viewer" id="v-${m.id}"><span class="loading">Loading…</span></div></div>`;
+  }).join("");
+  MATERIALS.forEach(m=>{
+    const v = document.getElementById("v-"+m.id);
+    if(imgs && imgs[m.id]) v.innerHTML = imgs[m.id].map(src=>`<img src="${src}" alt="${m.title}">`).join("");
+    else if(m.pdf) renderPdf(m.pdf, v);
+    else v.innerHTML = `<img src="${m.img}" alt="${m.title}" loading="lazy">`;
+  });
+}
+function showView(v){
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on", t.dataset.view===v));
+  document.getElementById("viewPlan").hidden = v!=="plan";
+  document.getElementById("viewMaterials").hidden = v!=="materials";
+  if(v==="materials") renderMaterials();
+}
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  const v = t.dataset.view;
+  try{ history.replaceState(null,"", v==="materials" ? "#materials" : "#week-"+(current+1)); }catch(e){}
+  showView(v); window.scrollTo({top:0});
+}));
+
+// ---------- Backup ----------
+const msg = t => { const m=document.getElementById("msg"); m.textContent=t; setTimeout(()=>m.textContent="",3000); };
+document.getElementById("copyBtn").onclick = async ()=>{
+  const txt = JSON.stringify(store);
+  document.getElementById("io").value = txt;
+  try{ await navigator.clipboard.writeText(txt); msg("Copied"); }catch(e){ msg("Select the text below and copy it"); }
+};
+document.getElementById("importBtn").onclick = ()=>{
+  try{ const d = JSON.parse(document.getElementById("io").value); if(typeof d!=="object"||!d) throw 0; store=d; save(); renderAll(); msg("Imported"); }
+  catch(e){ msg("Not a valid backup"); }
+};
+let resetArmed=false;
+document.getElementById("resetBtn").onclick = e=>{
+  if(!resetArmed){ resetArmed=true; e.target.textContent="Tap again to confirm"; setTimeout(()=>{resetArmed=false;e.target.textContent="Clear all";},3000); return; }
+  store={}; save(); renderAll(); msg("Cleared"); resetArmed=false; e.target.textContent="Clear all";
+};
+
+window.addEventListener("hashchange",()=>{ if(location.hash==="#materials"){ showView("materials"); return; } current=initialWeek(); showView("plan"); renderAll(); });
+current = initialWeek();
+renderLegend();
+renderAll();
+showView(location.hash==="#materials" ? "materials" : "plan");
+initCloud();
+</script>
+</body>
+</html>
